@@ -1,1 +1,16 @@
 \select@language {ngerman}
+\contentsline {chapter}{\numberline {1}Einf\IeC {\"u}hrung}{2}
+\contentsline {chapter}{\numberline {2}Ziele}{3}
+\contentsline {section}{\numberline {2.1}Strategische Ziele}{3}
+\contentsline {section}{\numberline {2.2}Taktische Ziele}{3}
+\contentsline {section}{\numberline {2.3}Operative Ziele}{3}
+\contentsline {section}{\numberline {2.4}Geplante Funktionalit\IeC {\"a}ten}{3}
+\contentsline {chapter}{\numberline {3}Mensch-Computer-Interaktion}{4}
+\contentsline {chapter}{\numberline {4}Kommunikationsablauf}{5}
+\contentsline {chapter}{\numberline {5}Systemarchitektur}{6}
+\contentsline {chapter}{\numberline {6}Datenmodell}{7}
+\contentsline {chapter}{\numberline {7}Proof-of-Concepts}{8}
+\contentsline {chapter}{\numberline {8}Gesch\IeC {\"a}ftsmodell}{9}
+\contentsline {chapter}{\numberline {9}Alleinstellungsmerkmal}{10}
+\contentsline {chapter}{\numberline {10}Risiken}{11}
+\contentsline {chapter}{\numberline {11}Projektplan}{12}

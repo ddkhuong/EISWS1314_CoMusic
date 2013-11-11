@@ -1,16 +1,35 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
 \select@language {ngerman}
-\contentsline {chapter}{\numberline {1}Einf\IeC {\"u}hrung}{2}
-\contentsline {chapter}{\numberline {2}Ziele}{3}
-\contentsline {section}{\numberline {2.1}Strategische Ziele}{3}
-\contentsline {section}{\numberline {2.2}Taktische Ziele}{3}
-\contentsline {section}{\numberline {2.3}Operative Ziele}{3}
-\contentsline {section}{\numberline {2.4}Geplante Funktionalit\IeC {\"a}ten}{3}
-\contentsline {chapter}{\numberline {3}Mensch-Computer-Interaktion}{4}
-\contentsline {chapter}{\numberline {4}Kommunikationsablauf}{5}
-\contentsline {chapter}{\numberline {5}Systemarchitektur}{6}
-\contentsline {chapter}{\numberline {6}Datenmodell}{7}
-\contentsline {chapter}{\numberline {7}Proof-of-Concepts}{8}
-\contentsline {chapter}{\numberline {8}Gesch\IeC {\"a}ftsmodell}{9}
-\contentsline {chapter}{\numberline {9}Alleinstellungsmerkmal}{10}
-\contentsline {chapter}{\numberline {10}Risiken}{11}
-\contentsline {chapter}{\numberline {11}Projektplan}{12}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Einf\IeC {\"u}hrung}{3}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Ziele}{5}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Strategische Ziele}{6}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Taktische Ziele}{6}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Operative Ziele}{6}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Geplante Funktionalit\IeC {\"a}ten}{6}{section.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Mensch-Computer-Interaktion}{7}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Kommunikationsablauf}{8}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Systemarchitektur}{9}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Datenmodell}{10}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Proof-of-Concepts}{11}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Marktrecherche}{12}{chapter.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {9}Gesch\IeC {\"a}ftsmodell}{13}{chapter.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {10}Alleinstellungsmerkmal}{14}{chapter.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {11}Risiken}{15}{chapter.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {12}Projektplan}{16}{chapter.12}

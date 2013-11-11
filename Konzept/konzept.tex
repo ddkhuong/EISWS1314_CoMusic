@@ -1,13 +1,17 @@
-\documentclass[a4paper, 12pt]{report}
+\documentclass[12pt]{report}
 
 \usepackage[ngerman]{babel} % Silbentrennung
 \usepackage[utf8]{inputenc} % Umlaute
 \usepackage{graphicx}
+\usepackage[style=authortitle-icomp]{biblatex}
+\usepackage[babel,german=guillemets]{csquotes}
 
-\pagestyle{headings}
+\usepackage{hyperref}
 
 
 \begin{document}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -17,13 +21,22 @@
 
 \newpage
 
+\begin{thebibliography}{9999999}
+
+  \bibitem[Muß]{Muss}Muß, Walter: Das Müssen in der
+  Freizeit. Frankfurt am Main: Freier Freizeitverlag, 1998.
+  \bibitem[Mayer]{Mayer}Mayer, Gert: Abgemayert in der
+  Banklehre. 3., verb. Aufl. München: Beck, 2001.
+  \bibitem[Test]{Test}Test, was
+\end{thebibliography}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Einführung}
 
 % hier evtl noch einführung, problemstellung, erwartungen ka
 
-Musik spielt bei vielen Menschen im alltäglichen Leben eine wichtige Rolle. Ob man Musik hört oder selber ein Instrument spielt, ist da jedem selber überlassen. Diejenigen, die sich sich für letzteres entscheiden, wollen meistens dann auch mit anderen Musikern zusammen Projekte starten und gründen eine Band.
+\cite{Test} Musik spielt bei vielen Menschen im alltäglichen Leben eine wichtige Rolle. Ob man Musik hört oder selber ein Instrument spielt, ist da jedem selber überlassen. Diejenigen, die sich sich für letzteres entscheiden, wollen meistens dann auch mit anderen Musikern zusammen Projekte starten und gründen eine Band.
 
 Die Organisation dabei spielt eine übergeordnete Rolle, denn z.B. die Proben, hängen vom Zeit- und Ortfaktor ab, wann hat jeder Zeit und wo wird der Bandraum sein. Sind diese Fragen geklärt besteht die Absicht darin, so effizient wie möglich zu arbeiten, so dass man auch gute Resultate erzielt. 
 Wenn die Probe dann zu Ende ist, ergibt sich dann die Schwierigkeit, dass vielleicht einer aus der Band spontan eine Idee hat für einen neuen Song oder ein Arrangement, aber erst warten muss, bis zur nächsten Probe, wo er dies mit den anderen teilen kann.
@@ -42,6 +55,25 @@ Kollaborativ ist zu wolkig -> mehr spezifizieren
 zu ungenau: Begründung warum MIDI
 geplante Funktionalitäten: zu technisch
 Zielpriorisierung textuell formulieren, zu ungenau
+
+Strategische Ziele
+
+Das Hauptziel des Projektes ist es Bands zu erleichtern auch außerhalb von den Proben gemeinsam Musik machen zu können, ohne dass sich diese treffen müssen.
+Taktische Ziele
+
+Taktisches Ziel ist die Entwicklung eines Systems, das ein kollaboratives Arbeiten von Musikern ermöglicht. Dazu gehört das Erstellen und Bearbeiten von Kompositionen. Außerdem soll dies in Echtzeit möglich sein.
+Operative Ziele
+
+Um die strategischen und taktischen Ziele zu erfüllen werden zunächst geeignete Vorgehens- und Gestaltungsmethoden der Mensch-Computer-Interaktion ausgewählt. Darauf hin werden die technischen Anforderungen des Systems festgelegt und schließlich ein Prototyp entwickelt, welches die Funktionalitäten des System demonstriert.
+geplante Funktionalitäten des Systems:
+
+Band- und Musikerverwaltung (einzelne Accounts für die Musiker, gemeinsamer Bereich für die jeweiligen Bands
+kollaboratives Arbeiten an MIDI-Spuren innerhalb einer Kompositionsidee
+Echtzeitaktualisierung der Spuren
+kompositionsbezogene Kommunikation der Bandmitglieder (Chatroom, Notizen o.Ä.)
+Optional: Generierung von Notenblättern und Tabulaturen anhand der MIDI-Dateien
+
+
 
 \section{Strategische Ziele}
 

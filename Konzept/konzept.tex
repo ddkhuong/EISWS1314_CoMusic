@@ -1,12 +1,22 @@
-\documentclass[12pt]{report}
+\documentclass[12pt]{scrartcl}
 
+\usepackage[T1]{fontenc}
 \usepackage[ngerman]{babel} % Silbentrennung
 \usepackage[utf8]{inputenc} % Umlaute
 \usepackage{graphicx}
 \usepackage[style=authortitle-icomp]{biblatex}
 \usepackage[babel,german=guillemets]{csquotes}
 
+\usepackage{xcolor}
+\definecolor{dark-red}{rgb}{0.4,0.15,0.15}
+\definecolor{dark-blue}{rgb}{0.15,0.15,0.4}
+\definecolor{medium-blue}{rgb}{0,0,0.5}
+
 \usepackage{hyperref}
+\hypersetup{
+    colorlinks, linkcolor={dark-red},
+    citecolor={dark-blue}, urlcolor={medium-blue}
+}
 
 
 \begin{document}
@@ -21,22 +31,13 @@
 
 \newpage
 
-\begin{thebibliography}{9999999}
-
-  \bibitem[Muß]{Muss}Muß, Walter: Das Müssen in der
-  Freizeit. Frankfurt am Main: Freier Freizeitverlag, 1998.
-  \bibitem[Mayer]{Mayer}Mayer, Gert: Abgemayert in der
-  Banklehre. 3., verb. Aufl. München: Beck, 2001.
-  \bibitem[Test]{Test}Test, was
-\end{thebibliography}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Einführung}
+\section{Einführung}
 
 % hier evtl noch einführung, problemstellung, erwartungen ka
 
-\cite{Test} Musik spielt bei vielen Menschen im alltäglichen Leben eine wichtige Rolle. Ob man Musik hört oder selber ein Instrument spielt, ist da jedem selber überlassen. Diejenigen, die sich sich für letzteres entscheiden, wollen meistens dann auch mit anderen Musikern zusammen Projekte starten und gründen eine Band.
+Musik spielt bei vielen Menschen im alltäglichen Leben eine wichtige Rolle. Ob man Musik hört oder selber ein Instrument spielt, ist da jedem selber überlassen. Diejenigen, die sich sich für letzteres entscheiden, wollen meistens dann auch mit anderen Musikern zusammen Projekte starten und gründen eine Band.
 
 Die Organisation dabei spielt eine übergeordnete Rolle, denn z.B. die Proben, hängen vom Zeit- und Ortfaktor ab, wann hat jeder Zeit und wo wird der Bandraum sein. Sind diese Fragen geklärt besteht die Absicht darin, so effizient wie möglich zu arbeiten, so dass man auch gute Resultate erzielt. 
 Wenn die Probe dann zu Ende ist, ergibt sich dann die Schwierigkeit, dass vielleicht einer aus der Band spontan eine Idee hat für einen neuen Song oder ein Arrangement, aber erst warten muss, bis zur nächsten Probe, wo er dies mit den anderen teilen kann.
@@ -47,7 +48,7 @@ Zusammengefasst soll ein System entwickelt werden, welches es ermöglicht, kolla
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Ziele}
+\section{Ziele}
 
 zu wenig Ziele definiert
 ausformulieren, detaillierter, mehr eingehen und verschärfen
@@ -75,17 +76,19 @@ Optional: Generierung von Notenblättern und Tabulaturen anhand der MIDI-Dateien
 
 
 
-\section{Strategische Ziele}
+\subsection{Strategische Ziele}
 
-\section{Taktische Ziele}
+\subsection{Taktische Ziele}
 
-\section{Operative Ziele}
+\subsection{Operative Ziele}
 
-\section[Geplante Funktionalitäten]{Geplante Funktionalitäten des Systems}
+\subsection[Geplante Funktionalitäten]{Geplante Funktionalitäten des Systems}
+
+%% Hier evtl zusammenfassung als tabelle
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Mensch-Computer-Interaktion}
+\section{Mensch-Computer-Interaktion}
 
 zu allgemein, nicht projektbezogen, besser darlegen
 Stakeholderanalyse noch spezifischer, Grundlage für Begründungen
@@ -93,38 +96,45 @@ wirkt vorgegriffen/zusammengewürfelt
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Kommunikationsablauf}
+\section{Kommunikationsablauf}
+
+Kommunikationsmodell abstrakter (wer mit wem, welche Inhalte, syn/asyn, welche Wege/Alternativen)
+technisch zu konkret, auf einer höheren Ebene argumentieren (Echtzeitkommunikation statt Chatroom)
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Systemarchitektur}
+
+Paradigmen kommen aus der Architektur nicht deutlich hervor, Paradigmen nicht mischen
+von Kommunikationsmodell zur Systemarchitektur führen
+Systemarchitektur konkreter, etwaige Softwarekomponenten, Logik der Komponenten (abstrakt)
+
+Vorgabe: java
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Datenmodell}
 
 Datenmodell unbegründet, umstrukturieren
-von Kommunikationsmodell zur Systemarchitektur führen
-Kommunikationsmodell abstrakter (wer mit wem, welche Inhalte, syn/asyn, welche Wege/Alternativen)
-Systemarchitektur konkreter, etwaige Softwarekomponenten, Logik der Komponenten (abstrakt)
-technisch zu konkret, auf einer höheren Ebene argumentieren (Echtzeitkommunikation statt Chatroom)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Proof-of-Concepts}
+
 Proof of Concepts abstrakter
-Paradigmen kommen aus der Architektur nicht deutlich hervor, Paradigmen nicht mischen
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Systemarchitektur}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\chapter{Datenmodell}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\chapter{Proof-of-Concepts}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\chapter{Marktrecherche}
+\section{Marktrecherche}
 
 Kein Mehrwert, kein Bezug zum Projekt
 Alleinstellungsmerkmale sind zu wenig
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Geschäftsmodell}
+\section{Geschäftsmodell}
 
 glaubhaft darstellen
 schon Entscheidung treffen
@@ -132,19 +142,22 @@ Etablierung am Markt und Nutzerbasis fehlt
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Alleinstellungsmerkmal}
+\section{Alleinstellungsmerkmal}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Risiken}
+\section{Risiken}
 
 alle Risiken betrachten (projektinterne Risiken)
 zu grob formuliert, Lösungsvorschläge fehlen
 Keine Struktur
 
+%% PUNKTE
+- stehende internetverbindung vorrausgesetzt
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Projektplan}
+\section{Projektplan}
 
 Feingranularer
 Stunden schätzen

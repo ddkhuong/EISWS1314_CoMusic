@@ -30,10 +30,24 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8}Marktrecherche}{5}{section.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Gesch\IeC {\"a}ftsmodell}{5}{section.9}
+\contentsline {subsection}{\numberline {8.1}kollaborative Kompositionsplattformen}{5}{subsection.8.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Alleinstellungsmerkmal}{6}{section.10}
+\contentsline {subsection}{\numberline {8.2}Notationseditoren}{6}{subsection.8.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11}Risiken}{6}{section.11}
+\contentsline {section}{\numberline {9}Gesch\IeC {\"a}ftsmodell}{6}{section.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12}Projektplan}{7}{section.12}
+\contentsline {subsection}{\numberline {9.1}m\IeC {\"o}gliche Gesch\IeC {\"a}ftsmodelle}{6}{subsection.9.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Lizenzen}{6}{section*.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Werbung}{7}{section*.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{monatliche Geb\IeC {\"u}hren}{7}{section*.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.2}Gesch\IeC {\"a}ftsmodell f\IeC {\"u}r CoMusic}{7}{subsection.9.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10}Alleinstellungsmerkmal}{7}{section.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11}Risiken}{8}{section.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12}Projektplan}{8}{section.12}

@@ -66,12 +66,7 @@ In dieser Zielhierarchie soll deutlich gemacht werden, welche kurz- und langfris
 - 
 
 
-% eher taktisch
-- Das Teilen und Ausarbeiten von Songideen soll in Ruhe außerhalb des Proberaumes geschehen können
-
-- Ko
-
-
+% alter text
 Aus dem Grund wäre es hilfreich, ein System zu besitzen, welches dem Musiker erlaubt, von sich zu Hause oder an einem beliebigen Ort seine Idee festzuhalten und mit den Bandkollegen zu teilen. Das System sollte also Funktionen bereitstellen, in einer bestimmten musikalischen Notation oder nach einen bestimmten Standard, z.B. MIDI, Ideen festzuhalten und diese mit den anderen teilen, so dass diese sich ein Bild davon machen können. Zusätzlich sollte der kollaborative Aspekt im Vordergrund stehen, wie es bei einer normalen Bandprobe auch der Fall ist. Demnach sollte es möglich sein, über das System miteinander zu kommunizieren, sei es durch einen Chat oder Notizen etc.. Damit die Zusammenarbeit auch funktionieren, müssen die Bandmitglieder benachrichtigt werden, damit diese stets Bescheid wissen, wenn jemand eine neue Idee hat.
 
 Das Hauptziel des Projektes ist es Bands zu erleichtern auch außerhalb von den Proben gemeinsam Musik machen zu können, ohne dass sich diese treffen müssen.
@@ -79,6 +74,9 @@ Das Hauptziel des Projektes ist es Bands zu erleichtern auch außerhalb von den 
 \subsection{Taktische Ziele}
 
 Taktisches Ziel ist die Entwicklung eines Systems, das ein kollaboratives Arbeiten von Musikern ermöglicht. Dazu gehört das Erstellen und Bearbeiten von Kompositionen. Außerdem soll dies in Echtzeit möglich sein.
+
+- Das Teilen und Ausarbeiten von Songideen soll in Ruhe außerhalb des Proberaumes geschehen können
+- Kommunizieren der Bandmitglieder über Ideen soll möglich sein
 
 % Kollaborativ ist zu wolkig -> mehr spezifizieren
 
@@ -143,8 +141,58 @@ Proof of Concepts abstrakter
 
 \section{Marktrecherche}
 
-Kein Mehrwert, kein Bezug zum Projekt
-Alleinstellungsmerkmale sind zu wenig
+% Kein Mehrwert, kein Bezug zum Projekt
+% Alleinstellungsmerkmale sind zu wenig
+
+Für die Marktrecherche wurden Produkte und Dienste untersucht, die dem Konzept von CoMusic ähnlich sind und eine Konkurrenz darstellen könnten. Dabei wurde auf zwei verschiedene Kategorien von Produkten gestoßen, welche das Konzept von CoMusik vereint.
+
+\subsection{kollaborative Kompositionsplattformen}
+
+Die untersuchten Produkte dieser Kategorie ermöglichen einen Austausch von Samples oder anderen Beispielaufnahmen wie Gesang sowie Texten und vieles mehr. Es können Musikideen aufgenommen und hochgeladen und mit anderen Musikern geteilt werden. So kann jeder Musiker seine Ideen zu einem Projekt beisteuern und die Beteiligten kennen in etwa die einzelnen Ideen. Ein hörbares, zusammengesetztes Beispiel aller Ideen beziehungsweise Instrumente ist hier aber nicht möglich und eine genauere Struktur oder Notation aller Instrumente ist nicht ersichtlich. Änderungen an den aufgenommenen Spuren sind nicht direkt möglich und es gibt nur sehr wenig Spielraum für Experimente, ohne eine Spur komplett neu aufzunehmen.
+
+% Bewertung hier?
+Diese Art der Kollaboration eignet sich eventuell für unabhängige Musiker, welche gemeinsam rein über das Internet Kompositionen erstellen wollen, nicht aber für eine gute Vorbereitung der Mitglieder einer Band auf eine anstehende Bandprobe.
+
+\begin{description}
+\item[Kompoz]
+Möglichkeit der Kollaboration mit fremden Personen
+einzelne Instrumente/Vocals sind vorhanden
+Ergänzung durch andere Mitglieder der Seite 
+
+\end{description}
+
+
+\subsection{Notationseditoren}
+
+
+
+
+
+
+Kompoz (www.kompoz.com)
+
+
+Sound Collabs (www.soundcollabs.com)
+Suche nach Komponenten(z.B. “Suche Gesang für folgendes”)
+Remix Anfragen, Möglichkeit eigene Songs zum Remix für andere bereitzustellen
+Verbindung mit Musiklabels, welche nach Demos suchen (Möglichkeit für Bands “rauszukommen”)
+
+v-band (www.v-band.de)
+Reines Forum mit Dateiupload.
+
+Rifflet (www.rifflet.com)
+Plattform für das Weiterentwickeln von unfertigen und/oder aufgegebenen Songs Anderer.
+
+
+Digital Musician (www.digitalmusician.net)
+Eher kommerziell, Projektmithilfe wie Jobangebote
+
+
+Die andere Kategorie sind Dienste oder Produkte, welche das Komponieren im MIDI-Format oder anderen Notationen ermöglicht. Dies bedeutet eine präzise Struktur und einen genauen Überblick über alle Spuren für alle Beteiligten. Ideen sind leicht für jeden Musiker änderbar und man hat einen großen Spielraum zum Ausprobieren und Experimentieren.
+Im Bereich Editoren und Sequenzer für verschiedene Notationen (Noten, Tabulaturen) und auch für das MIDI-Format gibt es bereits unzählige Lösungen, welche teilweise einen sehr großen Funktionsumfang und eine komplexe Bedienung haben können. Die Palette reicht von einfachen Editoren wie NoteEdit (http://noteedit.berlios.de/) über mehrspurige Kompositionswerkzeuge wie GuitarPro bis hin zu professionellen Lösungen wie Cubase (http://www.steinberg.net/de/products/cubase/) oder Logic (http://www.apple.com/de/logic-pro/), welche neben den in diesem Kontext interessanten Funktionen noch viele andere Funktionen bieten. Aufgrund der Komplexität der meisten Produkte in diesem Bereich möchten wir an dieser Stelle die Webapplikation Inudge (www.inudge.net) hervorheben, welche wegen ihrer Simplizität unserem Konzept sehr nahe kommt.
+Alle der eben aufgezählten Produkte haben einen gemeinsamen Nachteil: es ist keine einfache Kollaboration in Echtzeit möglich, lediglich das Teilen bereits notierter Ideen ist möglich.
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -154,12 +202,24 @@ Alleinstellungsmerkmale sind zu wenig
 % schon Entscheidung treffen
 % Etablierung am Markt und Nutzerbasis fehlt
 
+\subsection{mögliche Geschäftsmodelle}
+
 Um ein solches System gewinnbringend zu vermarkten, gibt es mehrere Alternativen.
-Als erstes könnte man das Programm, mit dem der Benutzer arbeitet, zu einem Festpreis verkaufen. Dies würde jedoch Bands abschrecken, da jeder Musiker das Produkt kaufen müsste. Falls eine Nutzung doch erwünscht ist, würden aus finanziellen Gründen eventuell nur ein Teil der Musiker (die Hauptkomponisten) das Produkt kaufen und das gemeinsame Kollaborieren mit der gesamten Band wäre nicht mehr gegeben. Au?erdem ist ein solches Geschäftsmodell unberechenbarer als Andere, da Lizenzen vergeben werden müssen, diese möglicherweise innerhalb der Band von mehreren Personen genutzt werden oder sogar für die Öffentlichkeit angeboten werden. Technische Funktionen für die Lizenzprüfung könnten durch illegale Modifikation der Software ausgehebelt werden und dem Geschäftsmodell schaden. Daher ist dieses Geschäftsmodell für unser Projekt eher weniger von Interesse.
-Eine andere Möglichkeit wäre, das Produkt zunächst kostenlos anzubieten, dann jedoch passende Werbung für die Benutzer einzublenden. Dies wirkt meistens aber sehr störend und abschreckend. Daher wären kleine Bannerflächen oder eine Einblendung beim Starten oder Beenden des Programmes von Werbung bestimmter Sponsoren aus dem Musikbereich eine Möglichkeit.
-Eine andere Möglichkeit wäre, für die Nutzung des Systems einer ganzen Band etwa monatlich Gebühren zu verlangen. So kann der Zugang zum Beispiel aus der Bandkasse finanziert werden und alle Mitglieder sind frei in der Nutzung, da ja die ganze Band bezahlt. Es besteht also kein Ausgrenzen oder sonstiger Druck auf die Band und auch würde eventuelle störende Werbung kein Thema mehr sein.
-Eine Kombination aus Sponsoren und Finanzierung durch die ganze Band wäre natürlich auch eine passende Möglichkeit. So können Bands selbst wählen, ob sie das System kostenlos mit dezenter Werbung kontextbezogener Sponsoren nutzen möchten, oder aber einen gewissen Betrag monatlich oder in anderen Nutzungszeiträumen zahlen möchten. Dadurch ist ein Testen des Systems einfach möglich und Bands können sich zunächst ein Bild davon machen, was das System kann und dann Entscheiden, ob sie es werbefrei (oder weiterhin mit Werbung) nutzen möchten.
-Besonders für die Etablierung am Markt sollte in jedem Falle ein gewisser Testzeitraum zur verfügung gestellt werden. Dadurch werden potentielle Kunden nicht von Gebühren abgeschreckt, falls sie beispielsweise gerade von dem Produkt erfahren haben und einen Blick darauf werfen möchten.
+
+\paragraph{Lizenzen}
+Als Erstes könnte man das Produkt, mit dem der Benutzer arbeitet, zu einem Festpreis verkaufen. Dies würde jedoch Bands abschrecken, da jeder Musiker für sich das Produkt kaufen müsste. Falls eine Nutzung doch erwünscht ist, würden aus finanziellen Gründen eventuell nur ein Teil der Musiker (etwa die Hauptkomponisten) das Produkt kaufen und das gemeinsame Komponente der gesamten Band wäre nicht mehr gegeben. Außerdem ist ein solches Geschäftsmodell unberechenbarer als Andere, da Lizenzen vergeben werden müssen, diese möglicherweise innerhalb der Band von mehreren Personen genutzt werden oder sogar für die Öffentlichkeit angeboten werden. Technische Funktionen für die Lizenzprüfung könnten durch illegale Modifikation der Software ausgehebelt werden und dem Geschäftsmodell schaden. Daher ist dieses Geschäftsmodell für unser Projekt eher weniger von Interesse.
+
+\paragraph{Werbung}
+Andererseits könnte man das Produkt zunächst kostenlos anbieten, jedoch (kontextbezogene) Werbung einblenden. Werbeflächen innerhalb eines Programm wirken meist allerdings sehr störend und abschreckend. Daher wäre das Einblenden von Werbung von Sponsoren aus dem Musikbereich beim Starten oder Beenden des Programmes von Werbung eine weitere Möglichkeit.
+
+\paragraph{monatliche Gebühren}
+Eine andere Möglichkeit wäre, für die Nutzung des Systems einer ganzen Band etwa monatlich Gebühren zu verlangen. So kann der Zugang zum Beispiel aus der Bandkasse finanziert werden und alle Mitglieder sind frei in der Nutzung. Es besteht also kein Ausgrenzen oder sonstiger Druck auf die Band und auch würde  störende Werbung kein Thema mehr sein.
+
+\subsection{Geschäftsmodell für CoMusic}
+
+Für dieses Projekt wurde eine Kombination der beiden letzten Möglichkeiten ausgewählt. Das Produkt soll also über monatliche Gebühren finanziert werden. Bezahlt wird als gesamte Band, sodass alle Mitglieder der Band das System nutzen können und die Nutzung beispielsweise aus der Bandkasse finanziert wird. Um das Produkt jedoch am Markt etablieren zu können und potentielle Nutzer nicht von Gebühren abzuschrecken, soll das Produkt einen kostenlosen Testzeitraum zur Verfügung stellen, in dem Bands das System testen und sich unverbindlich von CoMusic überzeugen lassen können.
+
+Um das Risiko eines Misserfolges zu vermindern, soll während der kostenlosen Testphase beim Starten oder Beenden des Programmes dezente und kontextbezogene Werbung von Sponsoren aus dem Musikbereich angezeigt werden.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -177,9 +237,12 @@ Wie bereits in der Marktrecherche deutlich geworden ist, schlägt unser Konzept 
 % Keine Struktur
 
 %% PUNKTE
+- 
 - stehende internetverbindung vorrausgesetzt
 
 - Risiken innerhalb des Projektes
+-> Zeitprobleme (auch ausfall der mitarbeiter)
+-> Probleme in der Umsetzung/Fehlschlag proof of concepts
 
 % alter text
 

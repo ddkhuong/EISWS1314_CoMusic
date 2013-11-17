@@ -20,58 +20,36 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Mensch-Computer-Interaktion}{5}{section.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Datenmodell}{5}{section.4}
+\contentsline {section}{\numberline {4}Kommunikationsablauf}{5}{section.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Kommunikationsablauf}{5}{section.5}
+\contentsline {section}{\numberline {5}Systemarchitektur}{5}{section.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Systemarchitektur}{7}{section.6}
+\contentsline {section}{\numberline {6}Datenmodell}{6}{section.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Proof-of-Concepts}{7}{section.7}
+\contentsline {section}{\numberline {7}Proof-of-Concepts}{6}{section.7}
 \defcounter {refsection}{0}\relax 
-<<<<<<< HEAD
 \contentsline {section}{\numberline {8}Marktrecherche}{6}{section.8}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.1}kollaborative Kompositionsplattformen}{6}{subsection.8.1}
-=======
-\contentsline {section}{\numberline {8}Marktrecherche}{7}{section.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.1}kollaborative Kompositionsplattformen}{7}{subsection.8.1}
->>>>>>> 915d105e1e9d0598eb80864e3fe1e099c300a2ac
+\contentsline {subsection}{\numberline {8.2}Notationseditoren}{6}{subsection.8.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2}Notationseditoren}{7}{subsection.8.2}
-\defcounter {refsection}{0}\relax 
-<<<<<<< HEAD
 \contentsline {section}{\numberline {9}Gesch\IeC {\"a}ftsmodell}{7}{section.9}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {9.1}m\IeC {\"o}gliche Gesch\IeC {\"a}ftsmodelle}{7}{subsection.9.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Lizenzen}{7}{section*.2}
-=======
-\contentsline {section}{\numberline {9}Gesch\IeC {\"a}ftsmodell}{8}{section.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1}m\IeC {\"o}gliche Gesch\IeC {\"a}ftsmodelle}{8}{subsection.9.1}
+\contentsline {paragraph}{Werbung}{7}{section*.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Lizenzen}{8}{section*.2}
->>>>>>> 915d105e1e9d0598eb80864e3fe1e099c300a2ac
+\contentsline {paragraph}{monatliche Geb\IeC {\"u}hren}{8}{section*.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Werbung}{8}{section*.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{monatliche Geb\IeC {\"u}hren}{9}{section*.4}
-\defcounter {refsection}{0}\relax 
-<<<<<<< HEAD
 \contentsline {subsection}{\numberline {9.2}Gesch\IeC {\"a}ftsmodell f\IeC {\"u}r CoMusic}{8}{subsection.9.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {10}Alleinstellungsmerkmal}{8}{section.10}
-=======
-\contentsline {subsection}{\numberline {9.2}Gesch\IeC {\"a}ftsmodell f\IeC {\"u}r CoMusic}{9}{subsection.9.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Alleinstellungsmerkmal}{9}{section.10}
->>>>>>> 915d105e1e9d0598eb80864e3fe1e099c300a2ac
+\contentsline {section}{\numberline {11}Risiken}{8}{section.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11}Risiken}{9}{section.11}
+\contentsline {paragraph}{Projektintern}{8}{section*.5}
 \defcounter {refsection}{0}\relax 
-<<<<<<< HEAD
 \contentsline {section}{\numberline {12}Projektplan}{9}{section.12}
-=======
-\contentsline {section}{\numberline {12}Projektplan}{10}{section.12}
->>>>>>> 915d105e1e9d0598eb80864e3fe1e099c300a2ac

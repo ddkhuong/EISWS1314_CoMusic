@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.5)  16 NOV 2013 17:41
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.5)  17 NOV 2013 16:30
 entering extended mode
 **konzept.tex
 (C:\Users\Robert\Documents\GitHub\EISWS1314_CoMusic\Konzept\konzept.tex
@@ -865,39 +865,55 @@ Overfull \hbox (10.65157pt too wide) in paragraph at lines 85--86
 r-den zu-nächst ge-eig-ne-te Vorgehens-
  []
 
-[4]
-Overfull \hbox (15.18779pt too wide) in paragraph at lines 155--158
+[4] <figures/kommunikationsmodell.png, id=141, 1619.04875pt x 1393.205pt>
+File: figures/kommunikationsmodell.png Graphic file (type png)
+
+<use figures/kommunikationsmodell.png>
+Package pdftex.def Info: figures/kommunikationsmodell.png used on input line 14
+1.
+(pdftex.def)             Requested size: 404.7612pt x 348.3004pt.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 154.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 154.
+ [5] [6 <C:/Users/Robert/Documents/GitHub/EISWS1314_CoMusic/Konzept/figures/kom
+munikationsmodell.png (PNG copy)>]
+Overfull \hbox (15.18779pt too wide) in paragraph at lines 202--205
 []\T1/cmr/m/n/12 Möglichkeit der Kol-la-bo-ra-ti-on mit frem-den Per-so-nen ein
 -zel-ne In-stru-men-te/Vocals
  []
 
-[5]
-Overfull \hbox (134.49193pt too wide) in paragraph at lines 187--190
+[7]
+Overfull \hbox (134.49193pt too wide) in paragraph at lines 235--238
 \T1/cmr/m/n/12 sun-gen wie Cu-ba-se (http://www.steinberg.net/de/products/cubas
 e/) oder Lo-gic (http://www.apple.com/de/logic-
  []
 
-[6] [7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 260.
- [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 260.
+[8] [9]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 312.
+ [10]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 312.
 
 (C:\Users\Robert\Documents\GitHub\EISWS1314_CoMusic\Konzept\konzept.aux
 (C:\Users\Robert\Documents\GitHub\EISWS1314_CoMusic\Konzept\deckblatt.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 260.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 260.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 312.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 312.
 Package rerunfilecheck Info: File `konzept.out' has not changed.
-(rerunfilecheck)             Checksum: 50128B4F18B40A515ADFD0A9B251AF71;1335.
+(rerunfilecheck)             Checksum: 6193CA0B7FA2322FD05EF6CC3492F332;1335.
 Package logreq Info: Writing requests to 'konzept.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 12915 strings out of 493921
- 205354 string characters out of 3147279
- 670717 words of memory out of 3000000
- 16008 multiletter control sequences out of 15000+200000
+ 12947 strings out of 493921
+ 205931 string characters out of 3147279
+ 670759 words of memory out of 3000000
+ 16031 multiletter control sequences out of 15000+200000
  14371 words of font info for 34 fonts, out of 3000000 for 9000
  845 hyphenation exceptions out of 8191
- 56i,8n,43p,924b,1499s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,7n,43p,924b,1499s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Robert\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
 \ecti1200.pk> <C:\Users\Robert\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappe
 n\ec\dpi600\ecsx1440.pk> <C:\Users\Robert\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
@@ -908,10 +924,11 @@ ata\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1728.pk> <C:\Users\
 Robert\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc2488.pk>
  <C:\Users\Robert\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
 crm1728.pk> <C:\Users\Robert\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
-ec\dpi600\eccc2074.pk>
-Output written on konzept.pdf (8 pages, 163358 bytes).
+ec\dpi600\eccc2074.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb>
+Output written on konzept.pdf (10 pages, 211984 bytes).
 PDF statistics:
- 464 PDF objects out of 1000 (max. 8388607)
- 35 named destinations out of 1000 (max. 500000)
- 182 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 483 PDF objects out of 1000 (max. 8388607)
+ 38 named destinations out of 1000 (max. 500000)
+ 187 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -108,28 +108,70 @@ wirkt vorgegriffen/zusammengewürfelt
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\section{Datenmodell}
+
+% Datenmodell unbegründet, umstrukturieren
+
+
+
+
+% alter text
+
+Das System ist spezialisiert für die kollaborative Arbeit an Kompositionsentwürfen in Bands. Es soll von Musikern und deren Bands genutzt werden. Für jeden Musiker werden seine Anmeldedaten gespeichert. Ein Musiker kann einer oder mehreren Bands angehören. Jeder Band werden die zugehörigen Kompositionen zugeordnet. Zu einer Komposition gehören mehrere Spuren, welche jeweils eine Matrix mit den gesetzten Tönen beinhaltet. Weitere Informationen wie Abspielgeschwindigkeit und Art der Instrumente werden in den Daten für Kompositionen und Spuren festgehalten. Diese Daten werden persistent in einer Datenbank gespeichert, um sie unabhängig von den Dienstnehmern an einem Ort dauerhaft verfügbar zu machen.
+Weitere Daten sind die Änderungsdaten, welche im Falle einer Änderung an einer Komposition durch einen Benutzer sowohl an alle anderen gerade aktiven Mitkomponisten als auch an den Dienstgeber der persistenten Datenspeicherung übermittelt werden.
+Zunächst nicht näher behandelt werden die Kommunikationsdaten in den kompositionsbezogenen Chaträumen, die von einem Dienstgeber eines Drittanbieters verwaltet werden.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Kommunikationsablauf}
 
-Kommunikationsmodell abstrakter (wer mit wem, welche Inhalte, syn/asyn, welche Wege/Alternativen)
-technisch zu konkret, auf einer höheren Ebene argumentieren (Echtzeitkommunikation statt Chatroom)
+% Kommunikationsmodell abstrakter (wer mit wem, welche Inhalte, syn/asyn, welche Wege/Alternativen)
+% technisch zu konkret, auf einer höheren Ebene argumentieren (Echtzeitkommunikation statt Chatroom)
 
+- wer mit wem
+- welche inhalte
+- paradigmen syn/asyn
+- welche wege (alternativ: peer to peer)
+BEGRÜNDEN!
+
+Im Folgenden soll die Kommunikation im System CoMusic erläutert werden.
+
+Um die Sicherheit der persistenten Daten zu gewährleisten, soll Kommunikationsteilnehmern des Systems in keinem Fall der direkte Zugang zur Datenhaltung ermöglicht werden. Dies erfolgt immer über den Dienstgeber, damit Anfragen und Daten validiert werden können. Die Kommunikation zwischen Dienst und der persistenten Datenhaltung erfolgt synchron, da es sich hier um Anfrage und Rückgabe beziehungsweise Modifizierung von Daten handelt.
+
+Musiker können mit dem Dienstgeber kommunizieren, um etwa neue Bands, neue Musiker oder neue Kompositionen zu erstellen. Außerdem können Sie Informationen zu ihren Bands, deren Kompositionen und bestimmte Kompositionen vom Dienst anfragen. Diese Kommunikation erfolgt nach dem synchronen Request-Response Paradigma.
+
+Die wichtigste Kommunikation ist der Austausch von Änderungsinformationen an Kompositionen und Kommentaren in Echtzeit. Diese Informationen werden von einem Nachrichtenvermittler entgegengenommen und nach dem asynchronen Publish-Subscribe Paradigma an alle aktiven Teilnehmer Teilnehmer gesendet. Ein weiterer Teilnehmer ist der Dienstgeber, der als Zuhörer fungiert und alle Änderungsinformationen in der persistenten Datenhaltung abspeichert.
+
+Eine Alternative zum Publish-Subscribe Paradigma wäre das Peer-to-Peer Paradigma, bei welchem Änderungsinformationen von einem Teilnehmer zu allen anderen aktiven Teilnehmern gesendet würden. Dieses wird hier jedoch nicht gewählt, da es viele Nachteile birgt:
+\begin{itemize}
+\item Alle Teilnehmer müssen sich gegenseitig kennen
+\item Bei einer Änderung entsteht beim Autor je nach Anzahl der aktiven Teilnehmer viel Datenverkehr
+\item Schlecht skalierbar
+\end{itemize}
+
+% Abbildung Kommunikationsmodell
+
+\begin{figure}
+\centering
+\includegraphics[scale=.25]{figures/kommunikationsmodell}
+\caption{Kommunikationsmodell}
+\label{fig:kommunikationsmodell}
+\end{figure}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Systemarchitektur}
 
-Paradigmen kommen aus der Architektur nicht deutlich hervor, Paradigmen nicht mischen
-von Kommunikationsmodell zur Systemarchitektur führen
-Systemarchitektur konkreter, etwaige Softwarekomponenten, Logik der Komponenten (abstrakt)
+% Paradigmen kommen aus der Architektur nicht deutlich hervor, Paradigmen nicht mischen
+% von Kommunikationsmodell zur Systemarchitektur führen
+% Systemarchitektur konkreter, etwaige Softwarekomponenten, Logik der Komponenten (abstrakt)
 
-Vorgabe: java
+% Zielplattform
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Vorgabe: java
 
-\section{Datenmodell}
 
-Datenmodell unbegründet, umstrukturieren
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -239,6 +281,8 @@ Wie bereits in der Marktrecherche deutlich geworden ist, schlägt unser Konzept 
 %% PUNKTE
 - 
 - stehende internetverbindung vorrausgesetzt
+- Rechte an songideen
+
 
 - Risiken innerhalb des Projektes
 -> Zeitprobleme (auch ausfall der mitarbeiter)

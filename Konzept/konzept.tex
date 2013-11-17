@@ -95,6 +95,8 @@ Um die strategischen und taktischen Ziele zu erfüllen werden zunächst geeignet
 \item Entwicklung eines Prototyps 
 \end{itemize}
 
+%% to add: echtzeitkommunikation, übertragene daten: änderungsinformationen, neue kommentare
+
 \subsection[Geplante Funktionalitäten]{Geplante Funktionalitäten des Systems}
 
 \begin{itemize}
@@ -111,7 +113,7 @@ Um die strategischen und taktischen Ziele zu erfüllen werden zunächst geeignet
 \end{itemize}
 
 
-
+%% SCHWERPUNKT auf echtzeitkollaboration !!!
 
 
 
@@ -146,32 +148,113 @@ Um dies gewährleisten zu können ist es notwendig, die Gebrauchstauglichkeit de
 
 \section{Kommunikationsablauf}
 
-Kommunikationsmodell abstrakter (wer mit wem, welche Inhalte, syn/asyn, welche Wege/Alternativen)
-technisch zu konkret, auf einer höheren Ebene argumentieren (Echtzeitkommunikation statt Chatroom)
+% Kommunikationsmodell abstrakter (wer mit wem, welche Inhalte, syn/asyn, welche Wege/Alternativen)
+% technisch zu konkret, auf einer höheren Ebene argumentieren (Echtzeitkommunikation statt Chatroom)
 
+- wer mit wem
+- welche inhalte
+- paradigmen syn/asyn
+- welche wege (alternativ: peer to peer)
+BEGRÜNDEN!
 
+Im Folgenden soll die Kommunikation im System CoMusic erläutert werden. Diese ist in \ref{fig:kommunikationsmodell} dargestellt.
+
+\begin{figure}
+\centering
+\includegraphics[scale=.25]{figures/kommunikationsmodell}
+\caption{Kommunikationsmodell}
+\label{fig:kommunikationsmodell}
+\end{figure}
+
+Um die Sicherheit der persistenten Daten zu gewährleisten, soll Kommunikationsteilnehmern des Systems in keinem Fall der direkte Zugang zur Datenhaltung ermöglicht werden. Dies erfolgt immer über den Dienstgeber, damit Anfragen und Daten validiert werden können. Die Kommunikation zwischen Dienst und der persistenten Datenhaltung erfolgt synchron, da es sich hier um Anfrage und Rückgabe beziehungsweise Modifizierung von Daten handelt.
+
+Musiker können mit dem Dienstgeber kommunizieren, um etwa neue Bands, neue Musiker oder neue Kompositionen zu erstellen. Außerdem können Sie Informationen zu ihren Bands, deren Kompositionen und bestimmte Kompositionen vom Dienst anfragen. Diese Kommunikation erfolgt nach dem synchronen Request-Response Paradigma.
+
+Die wichtigste Kommunikation ist der Austausch von Änderungsinformationen an Kompositionen und Kommentaren in Echtzeit. Diese Informationen werden von einem Nachrichtenvermittler entgegengenommen und nach dem asynchronen Publish-Subscribe Paradigma an alle aktiven Teilnehmer Teilnehmer gesendet. Ein weiterer Teilnehmer ist der Dienstgeber, der als Zuhörer fungiert und alle Änderungsinformationen in der persistenten Datenhaltung abspeichert.
+
+Eine Alternative zum Publish-Subscribe Paradigma wäre das Peer-to-Peer Paradigma, bei welchem Änderungsinformationen von einem Teilnehmer zu allen anderen aktiven Teilnehmern gesendet würden. Dieses wird hier jedoch nicht gewählt, da es viele Nachteile birgt:
+\begin{itemize}
+\item Alle Teilnehmer müssen sich gegenseitig kennen
+\item Bei einer Änderung entsteht beim Autor je nach Anzahl der aktiven Teilnehmer viel Datenverkehr
+\item Schlecht skalierbar
+\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Systemarchitektur}
 
-Paradigmen kommen aus der Architektur nicht deutlich hervor, Paradigmen nicht mischen
-von Kommunikationsmodell zur Systemarchitektur führen
-Systemarchitektur konkreter, etwaige Softwarekomponenten, Logik der Komponenten (abstrakt)
+% Paradigmen kommen aus der Architektur nicht deutlich hervor, Paradigmen nicht mischen
+% von Kommunikationsmodell zur Systemarchitektur führen
+% Systemarchitektur konkreter, etwaige Softwarekomponenten, Logik der Komponenten (abstrakt)
 
-Vorgabe: java
+% Zielplattform
+
+% Vorgabe: java
+
+\begin{figure}
+\centering
+\includegraphics[scale=.25]{figures/systemarchitekturmodell}
+\caption{Systemarchitekturmodell}
+\label{fig:systemarchitekturmodell}
+\end{figure}
+
+Die Systemarchitektur, welche in Abbildung \ref{fig:systemarchitekturmodell} dargestellt ist, ist aus dem Kommunikationsmodell abgeleitet. Nachdem festgestellt wurde, wer mit wem wie kommuniziert, können nun die einzelnen bisher eher abstrakteren Komponenten des Systems etwas genauer beschrieben werden.
+
+\paragraph{persistente Datenhaltung}
+Die persistente Datenhaltung wird aus einer Datenbank bestehen, in der alle Daten abgespeichert werden. Welche Daten hier abgespeichert werden sollen, wird im Datenmodell (hier Referenz) beschrieben.
+
+\paragraph{Dienst}
+Der zentrale Dienstgeber hat mehrere Aufgaben.
+\begin{itemize}
+\item Er fungiert als Vermittler zwischen allen Systemkomponenten und der Datenbank und validiert Anfragen und Daten.
+\item Er stellt einen Webservice bereit, um Dienstnehmern das Anfragen und Modifizieren von Daten zu ermöglichen.
+\item Er ist Subscriber (Zuhörer) der Message-Oriented-Middleware und erhält alle veröffentlichten Informationen, um Sie in der Datenhaltung persistent zu speichern.
+\end{itemize}
+
+Durch das direkte Speichern aller Echtzeitinformationen in der persistenten Datenhaltung erhalten alle neuen Teilnehmer immer den aktuellen Stand. Andererseits können aktive Teilnehmer jederzeit das System verlassen, ohne ungespeicherte Änderungen zu hinterlassen.
+
+% alter text
+
+Die Grundidee besteht aus dem Kollaborieren von verschiedenen Musikern an einer Komposition in Echtzeit. Der aktuelle Stand einer Komposition soll aber auch persistent für alle Mitkomponisten gespeichert werden, damit die gleichzeitige Anwesenheit aller Benutzer nicht verpflichtend ist. So kann zum Beispiel der Gitarrist zusammen mit dem Bassisten der Band eine Idee entwerfen, zu der der Schlagzeuger später alleine seine Ideen beiträgt, ohne dass alle Beteiligten zur gleichen Zeit online sein müssen.
+Eine Message Oriented Middleware agiert hier als Vermittler der Nachrichten zu Änderungen an einer Komposition. Aktive Dienstnehmer senden und empfangen diese Nachrichten im Falle von Änderungen. Der Dienstgeber der Daten empfängt diese Änderungen ebenfalls und speichert sie zu der jeweiligen Komposition persistent in einer Datenbank. Wird ein neuer Teilnehmer aktiv, holt er zunächst die aktuelle Komposition vom Dienstgeber der Daten und empfängt ab dann alle neuen Änderungen über die MOM.
+Der Chatroom Dienstgeber verwaltet Chaträume für jede Komposition, sodass eine kompositionsbezogene Kommunikation zwischen den aktiven Teilnehmern einer Komposition möglich ist.
+Eine klassische Benutzerauthentifizierung ermöglicht eine Zuordnung der Benutzer zu Bands und Kompositionen.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Datenmodell}
 
-Datenmodell unbegründet, umstrukturieren
+% Datenmodell unbegründet, umstrukturieren
+
+
+% alter text
+
+Das System ist spezialisiert für die kollaborative Arbeit an Kompositionsentwürfen in Bands. Es soll von Musikern und deren Bands genutzt werden. Für jeden Musiker werden seine Anmeldedaten gespeichert. Ein Musiker kann einer oder mehreren Bands angehören. Jeder Band werden die zugehörigen Kompositionen zugeordnet. Zu einer Komposition gehören mehrere Spuren, welche jeweils eine Matrix mit den gesetzten Tönen beinhaltet. Weitere Informationen wie Abspielgeschwindigkeit und Art der Instrumente werden in den Daten für Kompositionen und Spuren festgehalten. Diese Daten werden persistent in einer Datenbank gespeichert, um sie unabhängig von den Dienstnehmern an einem Ort dauerhaft verfügbar zu machen.
+Weitere Daten sind die Änderungsdaten, welche im Falle einer Änderung an einer Komposition durch einen Benutzer sowohl an alle anderen gerade aktiven Mitkomponisten als auch an den Dienstgeber der persistenten Datenspeicherung übermittelt werden.
+Zunächst nicht näher behandelt werden die Kommunikationsdaten in den kompositionsbezogenen Chaträumen, die von einem Dienstgeber eines Drittanbieters verwaltet werden.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Proof-of-Concepts}
 
-Proof of Concepts abstrakter
+% Proof of Concepts abstrakter
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

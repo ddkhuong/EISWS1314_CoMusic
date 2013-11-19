@@ -36,11 +36,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Systemarchitektur}{9}{section.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{persistente Datenhaltung}{10}{section*.2}
+\contentsline {paragraph}{persistente Datenhaltung}{9}{section*.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Message-Oriented-Middleware}{10}{section*.3}
+\contentsline {paragraph}{Message-Oriented-Middleware}{9}{section*.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Dienst}{10}{section*.4}
+\contentsline {paragraph}{Dienst}{9}{section*.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Dienstnehmer}{10}{section*.5}
 \defcounter {refsection}{0}\relax 
@@ -48,32 +48,34 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.1}Datenrepr\IeC {\"a}sentation}{11}{subsection.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Proof-of-Concepts}{11}{section.7}
+\contentsline {section}{\numberline {7}Abw\IeC {\"a}gungen von Technologien}{11}{section.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Marktrecherche und Alleinstellungsmerkmal}{11}{section.8}
+\contentsline {section}{\numberline {8}Proof of Concepts}{12}{section.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.1}kollaborative Kompositionsplattformen}{11}{subsection.8.1}
+\contentsline {section}{\numberline {9}Marktrecherche und Alleinstellungsmerkmal}{13}{section.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2}Notationseditoren}{12}{subsection.8.2}
+\contentsline {subsection}{\numberline {9.1}kollaborative Kompositionsplattformen}{13}{subsection.9.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Alleinstellungsmerkmal}{13}{section.9}
+\contentsline {subsection}{\numberline {9.2}Notationseditoren}{14}{subsection.9.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Gesch\IeC {\"a}ftsmodell}{14}{section.10}
+\contentsline {section}{\numberline {10}Alleinstellungsmerkmal}{14}{section.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.1}m\IeC {\"o}gliche Gesch\IeC {\"a}ftsmodelle}{14}{subsection.10.1}
+\contentsline {section}{\numberline {11}Gesch\IeC {\"a}ftsmodell}{15}{section.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Lizenzen}{14}{section*.6}
+\contentsline {subsection}{\numberline {11.1}m\IeC {\"o}gliche Gesch\IeC {\"a}ftsmodelle}{15}{subsection.11.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Werbung}{14}{section*.7}
+\contentsline {paragraph}{Lizenzen}{15}{section*.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{monatliche Geb\IeC {\"u}hren}{14}{section*.8}
+\contentsline {paragraph}{Werbung}{15}{section*.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.2}Gesch\IeC {\"a}ftsmodell f\IeC {\"u}r CoMusic}{15}{subsection.10.2}
+\contentsline {paragraph}{monatliche Geb\IeC {\"u}hren}{16}{section*.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11}Risiken}{15}{section.11}
+\contentsline {subsection}{\numberline {11.2}Gesch\IeC {\"a}ftsmodell f\IeC {\"u}r CoMusic}{16}{subsection.11.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Projektspezifisch}{15}{section*.9}
+\contentsline {section}{\numberline {12}Risiken}{16}{section.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Projektintern}{16}{section*.10}
+\contentsline {paragraph}{Projektspezifisch}{16}{section*.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12}Projektplan}{16}{section.12}
+\contentsline {paragraph}{Projektintern}{17}{section*.15}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13}Projektplan}{17}{section.13}

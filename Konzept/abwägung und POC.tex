@@ -1,0 +1,30 @@
+\section{Abwägungen von Technologien}
+
+\paragraph*{Synchronisieren von Daten in Echtzeit}
+Für den Austausch von Kompositionsänderungen und Kommentaren in Echtzeit ist die Verwendung einer Message-Oriented-Middleware geplant. Da die Projektvorgabe Java vorgibt, bietet sich die Nutzung des Java Message Services (JMS) und eines JMS-Brokers an. Aufgrund der zweiten Vorgabe, möglichst quelloffene Software von Drittanbietern zu verwenden, fällt hier die Wahl auf den Message Broker ActiveMQ von Apache\footnote{http://activemq.apache.org/}. Dieser implementiert das JMS vollständig und bietet dadurch eine passende Lösung für das Vorhaben.
+
+\paragraph*{Dienstnehmer}
+Besonders hier schränkt die Projektvorgabe der Programmiersprache die Auswahl ein. Für die Benutzeroberfläche des Dienstnehmers wird daher Java Swing verwendet. Auch der geplante Notationseditor soll mit Swing realisiert werden.
+
+\paragraph*{persistente Datenhaltung}
+Hier wird eine relationale Datenbank ins Auge gefasst. Auf die Nutzung einer XML-Datenbank wird aufgrund ihrer nicht benötigten Komplexität und ihrer Performance im Vergleich zu relationalen Datenbanken verzichtet. Zu den wichtigsten quelloffenen Lösungen gehören in diesem Bereich MySQL und PostgreSQL. Eine Entscheidung diesbezüglich erfolgt aufgrund ausstehender Recherchen an dieser Stelle noch nicht.
+
+\paragraph*{Musiknotation}
+Musik kann in unterschiedlichen Formen notiert werden. Dies sind etwa Tabulaturen oder Noten. Da beide Notationsformen jedoch je nach Instrument verschieden Variieren (Saitenanzahl der Instrumente, Notenschlüssel etc.), bietet sich eine Notation in direkten Tonwerten und -längen an. Diese ist für Jeden unabhängig von Instrumenten nachzuvollziehen und notierbar. Hier bietet sich die Nutzung von MIDI an, da die notierten Tonwerte in MIDI Steuersignale verwandelt und in der Anwendung des Dienstnehmers abgespielt werden können. Wieder aufgrund der Projektvorgabe, müssen die Kompositionen in Java behandelt werden. Für Java gibt es im Zusammenhang mit MIDI einige verwendbare Bibliotheken. Nativ bietet Java die Bibliothek \texttt{javax.sound.midi} an. Eine etwas ausführlichere Bibliothek ist zum Beispiel JFugue\footnote{http://www.jfugue.org/}, welche eine noch einfachere Notation unterstützt. Eine Entscheidung folgt.
+
+\paragraph*{Formate für die Datenübertragung}
+Hier muss noch überlegt werden, welches Datenformat für die Übertragung verwendet wird. Möglich wären zum Beispiel XML oder JSON.
+
+\section{Proof of Concepts}
+Um den erfolgreichen Einsatz der verschiedenen benötigten Technologien zu gewährleisten, müssen technische Risiken minimiert und vor dem Einsatz im Projektkonzext prototypisch getestet werden. Im weiteren Projektverlauf werden vorraussichtlich die folgenden Aspekte behandelt und dazu eventuelle Alternativen im Falle von Fehlschlägen aufgezeigt.
+
+\begin{description}
+\item[Echtzeitsynchronisation]
+Es soll ein einfacher Prototyp zum Senden und Empfangen von Beispielnachrichten in Echtzeit mit mehreren Dienstnehmern über den ActiveMQ Message Broker und JMS erstellt werden.
+\item[Notationseditor in Swing]
+Das Setzen von Tonwerten in einem grafischen Bereich und die Interaktion mit der Maus in Swing getestet werden.
+\item[Datenbank]
+Ein Prototyp soll Beispieldaten in einem Datenbanksystem (MySQL oder PostgreSQL) manipulieren und besonders das Abspeichern von Kompositionsspuren in einer serialisierten Notationsform testen.
+\item[Synchroner Datenaustausch mit dem Dienstnehmer]
+Es soll ein simpler REST Webservice implementiert werden und ein Dienstnehmer, der mit diesem Beispieldaten austauscht.
+\end{description}

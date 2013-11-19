@@ -215,6 +215,8 @@ Im weiteren Verlauf werden nun die einzelnen Schritte des Vorgehensmodells durch
 
 Im Folgenden soll die Kommunikation im System CoMusic erläutert werden. Diese ist in \ref{fig:kommunikationsmodell} dargestellt.
 
+Musiker können mit dem Dienstgeber kommunizieren, um etwa neue Bands, neue Musiker oder neue Kompositionen zu erstellen. Außerdem können Sie Informationen zu ihren Bands, deren Kompositionen und bestimmte Kompositionen vom Dienst anfragen. Diese Kommunikation erfolgt nach dem synchronen Request-Response Paradigma.
+
 \begin{figure}
 \centering
 \includegraphics[scale=.25]{figures/kommunikationsmodell}
@@ -222,14 +224,14 @@ Im Folgenden soll die Kommunikation im System CoMusic erläutert werden. Diese i
 \label{fig:kommunikationsmodell}
 \end{figure}
 
-Musiker können mit dem Dienstgeber kommunizieren, um etwa neue Bands, neue Musiker oder neue Kompositionen zu erstellen. Außerdem können Sie Informationen zu ihren Bands, deren Kompositionen und bestimmte Kompositionen vom Dienst anfragen. Diese Kommunikation erfolgt nach dem synchronen Request-Response Paradigma.
-
 Die wichtigste Kommunikation ist der Austausch von Änderungsinformationen an Kompositionen und Kommentaren in Echtzeit. Diese Informationen werden von einem Nachrichtenvermittler entgegengenommen und nach dem asynchronen Publish-Subscribe Paradigma an alle aktiven Teilnehmer gesendet. Ein weiterer Teilnehmer ist der Dienstgeber, der rein als Zuhörer fungiert und alle Änderungsinformationen in der persistenten Datenhaltung abspeichert. Eine Alternative zum Publish-Subscribe Paradigma wäre das Peer-to-Peer Paradigma, bei welchem Änderungsinformationen von einem Teilnehmer zu allen anderen aktiven Teilnehmern gesendet würden. Dieses wird hier jedoch nicht gewählt, da es viele Nachteile birgt:
 \begin{itemize}
 \item Alle Teilnehmer müssen sich gegenseitig kennen
 \item Bei einer Änderung entsteht beim Autor je nach Anzahl der aktiven Teilnehmer viel Datenverkehr
 \item Schlecht skalierbar
 \end{itemize}
+
+
 
 Um die Sicherheit der persistenten Daten zu gewährleisten, soll Kommunikationsteilnehmern des Systems in keinem Fall der direkte Zugang zur Datenhaltung ermöglicht werden. Dies erfolgt immer über den Dienstgeber, damit Anfragen und Daten validiert werden können. Die Kommunikation zwischen Dienst und der persistenten Datenhaltung erfolgt synchron, da es sich hier um Anfrage und Rückgabe beziehungsweise Modifizierung von Daten handelt.
 
@@ -246,12 +248,7 @@ Um die Sicherheit der persistenten Daten zu gewährleisten, soll Kommunikationst
 
 % Vorgabe: java
 
-\begin{figure}
-\centering
-\includegraphics[scale=.25]{figures/systemarchitekturmodell}
-\caption{Systemarchitekturmodell}
-\label{fig:systemarchitekturmodell}
-\end{figure}
+
 
 Die Systemarchitektur, welche in Abbildung \ref{fig:systemarchitekturmodell} dargestellt ist, ist aus dem Kommunikationsmodell abgeleitet. Nachdem festgestellt wurde, wer mit wem wie kommuniziert, können nun die einzelnen, bisher eher abstrakteren Komponenten des Systems etwas genauer beschrieben werden.
 
@@ -274,6 +271,12 @@ Durch das direkte Speichern aller Echtzeitinformationen in der persistenten Date
 \paragraph{Dienstnehmer}
 Dienstnehmer sind grafische Benutzeroberflächen in Form einer Desktopanwendung, die von den Nutzern des Systems bedient werden. Die Desktopanwendung ermöglicht den Benutzern alle nötigen Funktionen wie das Anlegen neuer Band- oder Musikerprofile und neuer Kompositionen. Ein Notationseditor in dieser Benutzeroberfläche lässt Manipulationen an Kompositionen zu, die an die MOM übermittelt werden. Ausserdem erhält der Dienstnehmer alle Manipulationen der anderen Teilnehmer und stellt sie in Echtzeit im Notationseditor dar.
 
+\begin{figure}
+\centering
+\includegraphics[scale=.25]{figures/systemarchitekturmodell}
+\caption{Systemarchitekturmodell}
+\label{fig:systemarchitekturmodell}
+\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -300,24 +303,38 @@ Da die Daten in einer zentralen Datenbank gespeichert werden, übernimmt das ver
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Proof-of-Concepts}
+\section{Abwägungen von Technologien}
 
-% Proof of Concepts abstrakter
+\paragraph*{Synchronisieren von Daten in Echtzeit}
+Für den Austausch von Kompositionsänderungen und Kommentaren in Echtzeit ist die Verwendung einer Message-Oriented-Middleware geplant. Da die Projektvorgabe Java vorgibt, bietet sich die Nutzung des Java Message Services (JMS) und eines JMS-Brokers an. Aufgrund der zweiten Vorgabe, möglichst quelloffene Software von Drittanbietern zu verwenden, fällt hier die Wahl auf den Message Broker ActiveMQ von Apache\footnote{http://activemq.apache.org/}. Dieser implementiert das JMS vollständig und bietet dadurch eine passende Lösung für das Vorhaben.
 
+\paragraph*{Dienstnehmer}
+Besonders hier schränkt die Projektvorgabe der Programmiersprache die Auswahl ein. Für die Benutzeroberfläche des Dienstnehmers wird daher Java Swing verwendet. Auch der geplante Notationseditor soll mit Swing realisiert werden.
 
+\paragraph*{persistente Datenhaltung}
+Hier wird eine relationale Datenbank ins Auge gefasst. Auf die Nutzung einer XML-Datenbank wird aufgrund ihrer nicht benötigten Komplexität und ihrer Performance im Vergleich zu relationalen Datenbanken verzichtet. Zu den wichtigsten quelloffenen Lösungen gehören in diesem Bereich MySQL und PostgreSQL. Eine Entscheidung diesbezüglich erfolgt aufgrund ausstehender Recherchen an dieser Stelle noch nicht.
 
+\paragraph*{Musiknotation}
+Musik kann in unterschiedlichen Formen notiert werden. Dies sind etwa Tabulaturen oder Noten. Da beide Notationsformen jedoch je nach Instrument verschieden Variieren (Saitenanzahl der Instrumente, Notenschlüssel etc.), bietet sich eine Notation in direkten Tonwerten und -längen an. Diese ist für Jeden unabhängig von Instrumenten nachzuvollziehen und notierbar. Hier bietet sich die Nutzung von MIDI an, da die notierten Tonwerte in MIDI Steuersignale verwandelt und in der Anwendung des Dienstnehmers abgespielt werden können. Wieder aufgrund der Projektvorgabe, müssen die Kompositionen in Java behandelt werden. Für Java gibt es im Zusammenhang mit MIDI einige verwendbare Bibliotheken. Nativ bietet Java die Bibliothek \texttt{javax.sound.midi} an. Eine etwas ausführlichere Bibliothek ist zum Beispiel JFugue\footnote{http://www.jfugue.org/}, welche eine noch einfachere Notation unterstützt. Eine Entscheidung folgt.
 
+\paragraph*{Formate für die Datenübertragung}
+Hier muss noch überlegt werden, welches Datenformat für die Übertragung verwendet wird. Möglich wären zum Beispiel XML oder JSON.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\section{Proof of Concepts}
+Um den erfolgreichen Einsatz der verschiedenen benötigten Technologien zu gewährleisten, müssen technische Risiken minimiert und vor dem Einsatz im Projektkonzext prototypisch getestet werden. Im weiteren Projektverlauf werden vorraussichtlich die folgenden Aspekte behandelt und dazu eventuelle Alternativen im Falle von Fehlschlägen aufgezeigt.
 
-
-
-
-
-
-
-
-
+\begin{description}
+\item[Echtzeitsynchronisation]
+Es soll ein einfacher Prototyp zum Senden und Empfangen von Beispielnachrichten in Echtzeit mit mehreren Dienstnehmern über den ActiveMQ Message Broker und JMS erstellt werden.
+\item[Notationseditor in Swing]
+Das Setzen von Tonwerten in einem grafischen Bereich und die Interaktion mit der Maus in Swing getestet werden.
+\item[Datenbank]
+Ein Prototyp soll Beispieldaten in einem Datenbanksystem (MySQL oder PostgreSQL) manipulieren und besonders das Abspeichern von Kompositionsspuren in einer serialisierten Notationsform testen.
+\item[Synchroner Datenaustausch mit dem Dienstnehmer]
+Es soll ein simpler REST Webservice implementiert werden und ein Dienstnehmer, der mit diesem Beispieldaten austauscht.
+\end{description}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -462,5 +479,9 @@ Ein wichtiger Lösungsansatz für die erfolgreiche Durchführung des Projektes i
 % hier aus excel einfügen
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\emph{siehe Verlinkung im Wiki}
+
+
 
 \end{document}

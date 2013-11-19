@@ -144,6 +144,37 @@ Dadurch sollten sie möglichst auch ohne jegliche Vorkenntnisse, bis auf die in 
 Um dies gewährleisten zu können ist es notwendig, die Gebrauchstauglichkeit des Systems zu maximieren, d.h. die Entwicklung und Gestaltung. Alles, was ihn in der Interaktion mit dem System beeinträchtigen könnte, sollte möglichst vermieden werden. Im Gegenteil, die Anwendung sollte den Benutzer in der Verwendung unterstützen können. Dazu zählt z.B. eine nicht zu komplexe grafische Benutzeroberfläche (GUI). Die Elemente der GUI sollten so gewählt sein, dass die Gebrauchstauglichkeit hoch ist keine Verwirrung oder Überforderung stattfindet.
 
 
+\subsection{Auswahl der MCI-Methoden}
+
+Nach der Wahl des Vorgehensmodells, werden einige Methoden der Mensch-Computer-Interaktion ausgewählt, die Informationen liefern können, welche relevant für die Entwicklung des Systems sein können.
+Diese Methoden kann man in 4 Bereiche einteilen, die sich auch im Vorgehensmodell widerspiegeln:
+Die Nutzungskontextanalyse
+Die Benutzermodellierung
+Schnittstellendesign und die
+Evaluation
+
+\subsubsection{Nutzungskontextanalyse}
+
+Zur Nutzungskontextanalyse gehört zunächst einmal die Festlegung der Nutzungskontexte, also wofür wird das System benötigt und in welchem Fall wird es verwendet. Dazu können Szenarien und Use Cases erstellt werden um bestimmte Kontexte untersuchen zu können. Zuvor sollte jedoch die Benutzermodellierung stattfinden, damit diese vollständig umgesetzt werden.
+
+\subsubsection{Benutzermodellierung}
+
+Unter die Benutzermodellierung gehört das Erstellen von User Profiles, Personae oder auch die Befragung potentieller Benutzer. 
+
+\subsubsection{Schnittstellendesign}
+
+Sind die Nutzungsanforderungen festgelegt, so ist der nächste Schritt die Gestaltungslösung zu entwickeln. Diese können in Form von papier-basierten Prototypen, erste digitale Mockups oder Ähnliches auftreten.
+
+\subsubsection{Evaluation}
+
+Als finaler Schritt, findet die Evaluation statt, d.h. es wird geprüft, ob in dieser Phase die “User Needs” zufriedenstellend erfüllt sind. Falls die Evaluation der Gestaltungslösung positiv ausfällt, kann mit der Umsetzung begonnen werden, ist dies jedoch nicht der Fall, so kann mit Hilfe Iteration, die Aspekte erneut untersucht werden, die noch zu optimieren sind.
+
+
+
+
+
+Im weiteren Verlauf werden nun die einzelnen Schritte des Vorgehensmodells durchgegangen und die dazu passenden Methoden angewendet um eine geeignete Gestaltungslösung erstellen zu können.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Kommunikationsablauf}
@@ -356,33 +387,28 @@ Wie bereits in der Marktrecherche deutlich geworden ist, schlägt unser Konzept 
 % Keine Struktur
 
 %% PUNKTE
-- 
-- stehende internetverbindung vorrausgesetzt
 
-- Risiken innerhalb des Projektes
--> Zeitprobleme (auch ausfall der mitarbeiter)
--> Probleme in der Umsetzung/Fehlschlag proof of concepts
+%neuer Text
+Selbstverständlich bestehen bei der Bearbeitung des Projekts Risiken, die beachtet und behandelt werden müssen. Dabei gibt zum Einen die Risiken, die das Projekt an sich betreffen und zum Anderen die projektinternen, welche das Team und die Projektbearbeitung betreffen.
+
+\paragraph{Projektspezifisch}
 \begin{itemize}
-\item stehende Internetverbindung vorausgesetzt, Lösung: lokale Speicherung und spätere Synchronisation
-\item fortgeschrittene musikalische Erfahrung notwendig
+\item eine stehende Internetverbindung wird für die Verwendung des Systems voraussgesetzt
+\item es sind fortschrittliche musikalische Vorkenntnisse von Nöten, für die Umsetzung in MIDI
+\item ggf. werden weitere Werkzeuge benötigt, die das Einspielen der Musik unterstützt (z.B. Audio-Interface,MIDI-Keyboard etc.)
+\item Proof-of-Concepts könnten fehlschlagen und müssen durch Alternativen abgesichert werden.
 \end{itemize}
 
 
 \paragraph{Projektintern}
-
 \begin{itemize}
-
-\item -> Zeitprobleme: andere Module nebenbei, Umfang des Projektes zu groß, Lösung: gründliche Zeiteinteilung und kontinuierliches Arbeiten
-\item Probleme in der Umsetzung -> Fehlschlagen des PoC, Lösung: Alternativen überlegen
-
+\item Zeitprobleme: parallel laufende Module und Projekte nehmen ebenfalls Zeit ein; Umfang des Projektes ist sehr groß 
+\item Ausfall eines Teammitgliedes: es könnte sein, dass ein Mitglied aus diversen Gründen ausfällt und das Projekt nicht weiter durchführen möchte
+\item Einhaltung des Projektplanes könnte nicht wie geplant erfolgen, weil die Schätzung des Aufwandes zu gering oder zu hoch sein könnte
 \end{itemize}
 
-% alter text
 
-Technisch bedingte Risiken wie zum Beispiel der Ausfall von Komponenten des verteilten Systems (Datenbanksystem oder Middleware fällt aus) oder die Vorraussetzung einer stehenden Internetverbindung werden in diesem Abschnitt eher weniger behandelt. Es soll mehr darum gehen, welche Faktoren ein mögliches Risiko im Ablauf, in der Bedienung oder in der Vermarktung des Systems darstellen könnten.
-Zunächst kann die Notation der MIDI-Kompositionen für einige Benutzer ungewohnt sein. Zwar sollten Töne und Oktaven für jeden Musiker intuitiv verständlich sein, jedoch ist trotz höherem Aufwand eine Notation in Noten oder Tabulaturen gängiger. Dies könnte möglicherweise einige Benutzer davon abschrecken, das System zu nutzen. Andererseits werden Instrumentenspezifische Notationen wie beispielsweise Violin- und Bassschlüssel sowie Tabulaturunterschiede für Bass und Gitarre vermieden und es gibt eine einfache und einheitliche Notation.
-Weiterhin kann natürlich das Fehlschlagen der Finanzierung auf lange Sicht ein Problem darstellen. Funktioniert das Geschäftsmodell nicht richtig, werden Verluste gemacht und das gesamte Projekt muss eingestellt werden.
-
+Ein wichtiger Lösungsansatz für die erfolgreiche Durchführung des Projektes ist die gründliche und organisierte Planung, sei es im Hinblick auf die Zeit oder auf inhaltliche Aspekte.  Außerdem ist es wichtig Alternativen zu haben, für den Fall von auftretenden Problemen, die zeitnah nicht gelöst werden können.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

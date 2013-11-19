@@ -7,6 +7,9 @@
 \usepackage[style=authortitle-icomp]{biblatex}
 \usepackage[babel,german=guillemets]{csquotes}
 
+\usepackage{float}
+\usepackage{pdfpages}
+
 \usepackage{xcolor}
 \definecolor{dark-red}{rgb}{0.4,0.15,0.15}
 \definecolor{dark-blue}{rgb}{0.15,0.15,0.4}
@@ -215,14 +218,14 @@ Im weiteren Verlauf werden nun die einzelnen Schritte des Vorgehensmodells durch
 
 Im Folgenden soll die Kommunikation im System CoMusic erläutert werden. Diese ist in \ref{fig:kommunikationsmodell} dargestellt.
 
-Musiker können mit dem Dienstgeber kommunizieren, um etwa neue Bands, neue Musiker oder neue Kompositionen zu erstellen. Außerdem können Sie Informationen zu ihren Bands, deren Kompositionen und bestimmte Kompositionen vom Dienst anfragen. Diese Kommunikation erfolgt nach dem synchronen Request-Response Paradigma.
-
-\begin{figure}
+\begin{figure}[H]
 \centering
 \includegraphics[scale=.25]{figures/kommunikationsmodell}
 \caption{Kommunikationsmodell}
 \label{fig:kommunikationsmodell}
 \end{figure}
+
+Musiker können mit dem Dienstgeber kommunizieren, um etwa neue Bands, neue Musiker oder neue Kompositionen zu erstellen. Außerdem können Sie Informationen zu ihren Bands, deren Kompositionen und bestimmte Kompositionen vom Dienst anfragen. Diese Kommunikation erfolgt nach dem synchronen Request-Response Paradigma.
 
 Die wichtigste Kommunikation ist der Austausch von Änderungsinformationen an Kompositionen und Kommentaren in Echtzeit. Diese Informationen werden von einem Nachrichtenvermittler entgegengenommen und nach dem asynchronen Publish-Subscribe Paradigma an alle aktiven Teilnehmer gesendet. Ein weiterer Teilnehmer ist der Dienstgeber, der rein als Zuhörer fungiert und alle Änderungsinformationen in der persistenten Datenhaltung abspeichert. Eine Alternative zum Publish-Subscribe Paradigma wäre das Peer-to-Peer Paradigma, bei welchem Änderungsinformationen von einem Teilnehmer zu allen anderen aktiven Teilnehmern gesendet würden. Dieses wird hier jedoch nicht gewählt, da es viele Nachteile birgt:
 \begin{itemize}
@@ -252,6 +255,13 @@ Um die Sicherheit der persistenten Daten zu gewährleisten, soll Kommunikationst
 
 Die Systemarchitektur, welche in Abbildung \ref{fig:systemarchitekturmodell} dargestellt ist, ist aus dem Kommunikationsmodell abgeleitet. Nachdem festgestellt wurde, wer mit wem wie kommuniziert, können nun die einzelnen, bisher eher abstrakteren Komponenten des Systems etwas genauer beschrieben werden.
 
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.25]{figures/systemarchitekturmodell}
+\caption{Systemarchitekturmodell}
+\label{fig:systemarchitekturmodell}
+\end{figure}
+
 \paragraph{persistente Datenhaltung}
 Die persistente Datenhaltung wird aus einer Datenbank bestehen, in der alle Daten abgespeichert werden. Welche Daten hier abgespeichert werden sollen, wird im Datenmodell etwas näher erläutert.
 
@@ -270,13 +280,6 @@ Durch das direkte Speichern aller Echtzeitinformationen in der persistenten Date
 
 \paragraph{Dienstnehmer}
 Dienstnehmer sind grafische Benutzeroberflächen in Form einer Desktopanwendung, die von den Nutzern des Systems bedient werden. Die Desktopanwendung ermöglicht den Benutzern alle nötigen Funktionen wie das Anlegen neuer Band- oder Musikerprofile und neuer Kompositionen. Ein Notationseditor in dieser Benutzeroberfläche lässt Manipulationen an Kompositionen zu, die an die MOM übermittelt werden. Ausserdem erhält der Dienstnehmer alle Manipulationen der anderen Teilnehmer und stellt sie in Echtzeit im Notationseditor dar.
-
-\begin{figure}
-\centering
-\includegraphics[scale=.25]{figures/systemarchitekturmodell}
-\caption{Systemarchitekturmodell}
-\label{fig:systemarchitekturmodell}
-\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -476,12 +479,18 @@ Ein wichtiger Lösungsansatz für die erfolgreiche Durchführung des Projektes i
 % Stunden schätzen
 % genau einteilen wer was macht
 
+\includepdf[pages=-]{../Projektplan/EIS_Projektplan_KhuongKellermann.pdf} 
+
 % hier aus excel einfügen
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\emph{siehe Verlinkung im Wiki}
+\newpage
 
+\listoffigures
 
+\newpage
+
+\listoftables
 
 \end{document}

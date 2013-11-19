@@ -127,9 +127,9 @@ Um die strategischen und taktischen Ziele zu erfüllen werden zunächst geeignet
 
 \section{Mensch-Computer-Interaktion}
 
-zu allgemein, nicht projektbezogen, besser darlegen
-Stakeholderanalyse noch spezifischer, Grundlage für Begründungen
-wirkt vorgegriffen/zusammengewürfelt
+% zu allgemein, nicht projektbezogen, besser darlegen
+% Stakeholderanalyse noch spezifischer, Grundlage für Begründungen
+% wirkt vorgegriffen/zusammengewürfelt
 
 \subsection{Abwägung Nutzerzentrierte/Nutzungszentrierte Gestaltung}
 Um eine geeignete Grundlage zu schaffen, damit eine erfolgreiche Umsetzung des System erfolgen kann, sollte eine vollständige und durchdachte Planung stattfinden. Dazu zählt die Konzeptionierung, Evaluation, Gestaltung und die Entwicklung. 
@@ -141,8 +141,7 @@ Aus der Problematik bzw. der Motivation, lässt sich ableiten, dass die Entwickl
 In dem Fall sind die Benutzer, die im Hauptfokus des Projekts stehen, die Musiker, speziell die in Gruppen wie Bands etc., was bedeutet, dass das System auf die eine Zielgruppe zugeschnitten werden muss. Auch der Nutzungskontext lässt sich daraus ableiten, wodurch sich eine benutzerzentrierte Gestaltung anbietet. Die Anforderungen der Benutzer können herauskristallisiert werden wodurch das System weitesgehend angepasst werden kann.
 
 Dadurch sollten sie möglichst auch ohne jegliche Vorkenntnisse, bis auf die in unserem spezifischen Nutzungskontext erforderten, mit dem System interagieren können.
-Um dies gewährleisten zu können ist es notwendig, die Gebrauchstauglichkeit des Systems zu maximieren, d.h. die Entwicklung und Gestaltung. Alles, was ihn in der Interaktion mit dem System beeinträchtigen könnte, sollte möglichst vermieden werden. Im Gegenteil, die Anwendung sollte den Benutzer in der Verwendung unterstützen können. Dazu zählt z.B. eine nicht zu komplexe grafische Benutzeroberfläche (GUI). Die Elemente der GUI sollten so gewählt sein, dass die Gebrauchstauglichkeit hoch ist keine Verwirrung oder Überforderung stattfindet.
-
+Um dies gewährleisten zu können ist es notwendig, die Gebrauchstauglichkeit des Systems zu maximieren, d.h. die Entwicklung und Gestaltung. Alles, was ihn in der Interaktion mit dem System beeinträchtigen könnte, sollte möglichst vermieden werden. Im Gegenteil, die Anwendung sollte den Benutzer in der Verwendung unterstützen können. Dazu zählt z.B. eine nicht zu komplexe grafische Benutzeroberfläche (GUI). Die Elemente der GUI sollten so gewählt sein, dass die Gebrauchstauglichkeit hoch ist und keine Verwirrung oder Überforderung stattfindet.
 
 \subsection{Auswahl der MCI-Methoden}
 
@@ -169,6 +168,32 @@ Sind die Nutzungsanforderungen festgelegt, so ist der nächste Schritt die Gesta
 
 Als finaler Schritt, findet die Evaluation statt, d.h. es wird geprüft, ob in dieser Phase die “User Needs” zufriedenstellend erfüllt sind. Falls die Evaluation der Gestaltungslösung positiv ausfällt, kann mit der Umsetzung begonnen werden, ist dies jedoch nicht der Fall, so kann mit Hilfe Iteration, die Aspekte erneut untersucht werden, die noch zu optimieren sind.
 
+\begin{table}[!ht]
+
+\begin{tabular}{|p{3cm}|p{3.0cm}|p{7cm}|p{2cm}|} \hline
+
+\textbf{Bezeichnung} & \textbf{Beziehung zum System} & \textbf{Beschreibung} & \textbf{Priorität für das Projekt}\\ \hline
+
+Bandmusiker & Anspruch & Bandmusiker erstellen mit Hilfe des Systems Projekte, welche jeweils neue Kompositionen enthalten. Sie benutzen die Anwendung, um außerhalb der Bandproben immer noch miteinander Ideen erstellen und Musik komponieren zu können. & hoch \\ \hline
+
+Musikproduzenten & Interesse & Können das System verwenden um mit Bands bzw. Musikern zu kollaborieren oder sie zu unterstützen bei der Komposition. & mittel \\ \hline
+
+Plattenfirma & Interesse & Vorgesetzte von Musikern und Bands. Haben ggf. Interesse daran, das System für die eigenen Musiker zu verwenden, oder auch für die eigenen Produzenten. & gering \\ \hline
+
+Musiksoftware- hersteller & Interesse & Haben ggf. Interesse daran, das System in ihre eigene Software zu integrieren. & gering \\ \hline
+
+Bands, die eine Zusammenarbeit mit anderen Bands planen & Anspruch, Interesse & Genau wie einzelne Musiker in einer Band, können mehrere Bands für gemeinsame Projekte, mit Hilfe des Systems, zusammenarbeiten. & hoch \\ \hline
+
+Musikveröffent- lichungsplattform & Interesse & Die einzelnen Ideen können abgespeichert werden und auf den Plattformen für die Öffentlichkeit präsentiert werden. & gering \\ \hline
+
+Hersteller für technisches Zubehör (z.B. Interfaces, Instrumente) & Interesse & Sind am System interessiert, da sich durch die Verwendung hardware-technische Voraussetzungen ergeben, welche den Verkauf unterstützen können. & gering \\ \hline
+
+
+
+\end{tabular}
+\caption{Stakeholderanalyse}
+\end{table}
+
 
 
 
@@ -182,11 +207,11 @@ Im weiteren Verlauf werden nun die einzelnen Schritte des Vorgehensmodells durch
 % Kommunikationsmodell abstrakter (wer mit wem, welche Inhalte, syn/asyn, welche Wege/Alternativen)
 % technisch zu konkret, auf einer höheren Ebene argumentieren (Echtzeitkommunikation statt Chatroom)
 
-- wer mit wem
-- welche inhalte
-- paradigmen syn/asyn
-- welche wege (alternativ: peer to peer)
-BEGRÜNDEN!
+%- wer mit wem
+%- welche inhalte
+%- paradigmen syn/asyn
+%- welche wege (alternativ: peer to peer)
+%BEGRÜNDEN!
 
 Im Folgenden soll die Kommunikation im System CoMusic erläutert werden. Diese ist in \ref{fig:kommunikationsmodell} dargestellt.
 
@@ -197,18 +222,17 @@ Im Folgenden soll die Kommunikation im System CoMusic erläutert werden. Diese i
 \label{fig:kommunikationsmodell}
 \end{figure}
 
-Um die Sicherheit der persistenten Daten zu gewährleisten, soll Kommunikationsteilnehmern des Systems in keinem Fall der direkte Zugang zur Datenhaltung ermöglicht werden. Dies erfolgt immer über den Dienstgeber, damit Anfragen und Daten validiert werden können. Die Kommunikation zwischen Dienst und der persistenten Datenhaltung erfolgt synchron, da es sich hier um Anfrage und Rückgabe beziehungsweise Modifizierung von Daten handelt.
-
 Musiker können mit dem Dienstgeber kommunizieren, um etwa neue Bands, neue Musiker oder neue Kompositionen zu erstellen. Außerdem können Sie Informationen zu ihren Bands, deren Kompositionen und bestimmte Kompositionen vom Dienst anfragen. Diese Kommunikation erfolgt nach dem synchronen Request-Response Paradigma.
 
-Die wichtigste Kommunikation ist der Austausch von Änderungsinformationen an Kompositionen und Kommentaren in Echtzeit. Diese Informationen werden von einem Nachrichtenvermittler entgegengenommen und nach dem asynchronen Publish-Subscribe Paradigma an alle aktiven Teilnehmer Teilnehmer gesendet. Ein weiterer Teilnehmer ist der Dienstgeber, der als Zuhörer fungiert und alle Änderungsinformationen in der persistenten Datenhaltung abspeichert.
-
-Eine Alternative zum Publish-Subscribe Paradigma wäre das Peer-to-Peer Paradigma, bei welchem Änderungsinformationen von einem Teilnehmer zu allen anderen aktiven Teilnehmern gesendet würden. Dieses wird hier jedoch nicht gewählt, da es viele Nachteile birgt:
+Die wichtigste Kommunikation ist der Austausch von Änderungsinformationen an Kompositionen und Kommentaren in Echtzeit. Diese Informationen werden von einem Nachrichtenvermittler entgegengenommen und nach dem asynchronen Publish-Subscribe Paradigma an alle aktiven Teilnehmer gesendet. Ein weiterer Teilnehmer ist der Dienstgeber, der rein als Zuhörer fungiert und alle Änderungsinformationen in der persistenten Datenhaltung abspeichert. Eine Alternative zum Publish-Subscribe Paradigma wäre das Peer-to-Peer Paradigma, bei welchem Änderungsinformationen von einem Teilnehmer zu allen anderen aktiven Teilnehmern gesendet würden. Dieses wird hier jedoch nicht gewählt, da es viele Nachteile birgt:
 \begin{itemize}
 \item Alle Teilnehmer müssen sich gegenseitig kennen
 \item Bei einer Änderung entsteht beim Autor je nach Anzahl der aktiven Teilnehmer viel Datenverkehr
 \item Schlecht skalierbar
 \end{itemize}
+
+Um die Sicherheit der persistenten Daten zu gewährleisten, soll Kommunikationsteilnehmern des Systems in keinem Fall der direkte Zugang zur Datenhaltung ermöglicht werden. Dies erfolgt immer über den Dienstgeber, damit Anfragen und Daten validiert werden können. Die Kommunikation zwischen Dienst und der persistenten Datenhaltung erfolgt synchron, da es sich hier um Anfrage und Rückgabe beziehungsweise Modifizierung von Daten handelt.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -229,10 +253,13 @@ Eine Alternative zum Publish-Subscribe Paradigma wäre das Peer-to-Peer Paradigm
 \label{fig:systemarchitekturmodell}
 \end{figure}
 
-Die Systemarchitektur, welche in Abbildung \ref{fig:systemarchitekturmodell} dargestellt ist, ist aus dem Kommunikationsmodell abgeleitet. Nachdem festgestellt wurde, wer mit wem wie kommuniziert, können nun die einzelnen bisher eher abstrakteren Komponenten des Systems etwas genauer beschrieben werden.
+Die Systemarchitektur, welche in Abbildung \ref{fig:systemarchitekturmodell} dargestellt ist, ist aus dem Kommunikationsmodell abgeleitet. Nachdem festgestellt wurde, wer mit wem wie kommuniziert, können nun die einzelnen, bisher eher abstrakteren Komponenten des Systems etwas genauer beschrieben werden.
 
 \paragraph{persistente Datenhaltung}
-Die persistente Datenhaltung wird aus einer Datenbank bestehen, in der alle Daten abgespeichert werden. Welche Daten hier abgespeichert werden sollen, wird im Datenmodell (hier Referenz) beschrieben.
+Die persistente Datenhaltung wird aus einer Datenbank bestehen, in der alle Daten abgespeichert werden. Welche Daten hier abgespeichert werden sollen, wird im Datenmodell etwas näher erläutert.
+
+\paragraph{Message-Oriented-Middleware}
+Die MOM agiert als Vermittler in der Anwendung des Publish-Subscribe Paradigmas. Sie stellt Topics für Kompositionen zur Verfügung, auf denen Änderungen in Form von Notationsänderungen und Kommentarnachrichten in Echtzeit publiziert und an aktive Teilnehmer vermittelt wird.
 
 \paragraph{Dienst}
 Der zentrale Dienstgeber hat mehrere Aufgaben.
@@ -244,26 +271,32 @@ Der zentrale Dienstgeber hat mehrere Aufgaben.
 
 Durch das direkte Speichern aller Echtzeitinformationen in der persistenten Datenhaltung erhalten alle neuen Teilnehmer immer den aktuellen Stand. Andererseits können aktive Teilnehmer jederzeit das System verlassen, ohne ungespeicherte Änderungen zu hinterlassen.
 
-% alter text
+\paragraph{Dienstnehmer}
+Dienstnehmer sind grafische Benutzeroberflächen in Form einer Desktopanwendung, die von den Nutzern des Systems bedient werden. Die Desktopanwendung ermöglicht den Benutzern alle nötigen Funktionen wie das Anlegen neuer Band- oder Musikerprofile und neuer Kompositionen. Ein Notationseditor in dieser Benutzeroberfläche lässt Manipulationen an Kompositionen zu, die an die MOM übermittelt werden. Ausserdem erhält der Dienstnehmer alle Manipulationen der anderen Teilnehmer und stellt sie in Echtzeit im Notationseditor dar.
 
-Die Grundidee besteht aus dem Kollaborieren von verschiedenen Musikern an einer Komposition in Echtzeit. Der aktuelle Stand einer Komposition soll aber auch persistent für alle Mitkomponisten gespeichert werden, damit die gleichzeitige Anwesenheit aller Benutzer nicht verpflichtend ist. So kann zum Beispiel der Gitarrist zusammen mit dem Bassisten der Band eine Idee entwerfen, zu der der Schlagzeuger später alleine seine Ideen beiträgt, ohne dass alle Beteiligten zur gleichen Zeit online sein müssen.
-Eine Message Oriented Middleware agiert hier als Vermittler der Nachrichten zu Änderungen an einer Komposition. Aktive Dienstnehmer senden und empfangen diese Nachrichten im Falle von Änderungen. Der Dienstgeber der Daten empfängt diese Änderungen ebenfalls und speichert sie zu der jeweiligen Komposition persistent in einer Datenbank. Wird ein neuer Teilnehmer aktiv, holt er zunächst die aktuelle Komposition vom Dienstgeber der Daten und empfängt ab dann alle neuen Änderungen über die MOM.
-Der Chatroom Dienstgeber verwaltet Chaträume für jede Komposition, sodass eine kompositionsbezogene Kommunikation zwischen den aktiven Teilnehmern einer Komposition möglich ist.
-Eine klassische Benutzerauthentifizierung ermöglicht eine Zuordnung der Benutzer zu Bands und Kompositionen.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Datenmodell}
+\label{sec:datenmodell}
 
 % Datenmodell unbegründet, umstrukturieren
 
+Das Datenmodell beschreibt, welche Daten vom System genutzt und verwaltet werden. Alle Daten, die synchron oder asynchron im System übertragen werden, werden in der zentralen, persistenten Datenhaltung gespeichert. Dies erlaubt einen zeitunabhängigen Zugriff auf alle Daten. 
 
-% alter text
+\begin{description}
+\item[Bandinformationen]
+Informationen zu einer Band beinhalten alle notwendigen Elemente wie Bandname, zugehörige Musiker und eine Liste aller Kompositionen dieser Band. Außerdem gehört zu jeder Band ein Musiker, welcher die Rollen des Bandleiters übernimmt. Dieser kann beispielsweise derjenige sein, der die Band in das System einträgt. Diese Informationen sind für die Organisation in der Band wichtig, damit eine Zugehörigkeit zwischen Bands und Musikern vorhanden ist.
+\item[Musiker]
+Musiker sind die einzelnen Benutzer des Systems. Hier werden Anmeldedaten wie Benutzername und Passwort gespeichert, aber auch, zu welchen Bands er im System eingetragen ist. Musiker können in mehreren Bands gehören.
+\item[Komposition]
+Kompositionen bestehen zunächst aus grundlegenden Informationen wie Titel beziehungsweise Arbeitstitel, geplantes Genre und weiteren individuelle Notizen, Informationen und Anmerkungen. Weiter werden die Notationsdaten der Komposition abgespeichert. Diese bestehen aus Geschwindigkeit der Komposition und einer serialisierten Form der Notation, etwa eine Matrix mit Tonwerten.
+\item[Kommentare]
+Zu jeder Komposition können Kommentare und Anmerkungen gemacht werden. Diese Daten bestehen aus Datum, Autor und dem individuellen Kommentar.
+\end{description}
 
-Das System ist spezialisiert für die kollaborative Arbeit an Kompositionsentwürfen in Bands. Es soll von Musikern und deren Bands genutzt werden. Für jeden Musiker werden seine Anmeldedaten gespeichert. Ein Musiker kann einer oder mehreren Bands angehören. Jeder Band werden die zugehörigen Kompositionen zugeordnet. Zu einer Komposition gehören mehrere Spuren, welche jeweils eine Matrix mit den gesetzten Tönen beinhaltet. Weitere Informationen wie Abspielgeschwindigkeit und Art der Instrumente werden in den Daten für Kompositionen und Spuren festgehalten. Diese Daten werden persistent in einer Datenbank gespeichert, um sie unabhängig von den Dienstnehmern an einem Ort dauerhaft verfügbar zu machen.
-Weitere Daten sind die Änderungsdaten, welche im Falle einer Änderung an einer Komposition durch einen Benutzer sowohl an alle anderen gerade aktiven Mitkomponisten als auch an den Dienstgeber der persistenten Datenspeicherung übermittelt werden.
-Zunächst nicht näher behandelt werden die Kommunikationsdaten in den kompositionsbezogenen Chaträumen, die von einem Dienstgeber eines Drittanbieters verwaltet werden.
-
+\subsection{Datenrepräsentation}
+Da die Daten in einer zentralen Datenbank gespeichert werden, übernimmt das verwendete Datenbankmanagementsystem die Aufgabe der Datenrepräsentation. Für die Übertragung der Daten zwischen den verschiedenen Systemkomponenten muss ein geeignetes Datenformat gewählt werden. Auf ein bestimmtes Format wurde sich an dieser Stelle noch nicht festgelegt.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

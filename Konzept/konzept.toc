@@ -32,42 +32,48 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.2.4}Evaluation}{6}{subsubsection.3.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Kommunikationsablauf}{7}{section.4}
+\contentsline {section}{\numberline {4}Kommunikationsablauf}{8}{section.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Systemarchitektur}{8}{section.5}
+\contentsline {section}{\numberline {5}Systemarchitektur}{9}{section.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{persistente Datenhaltung}{8}{section*.2}
+\contentsline {paragraph}{persistente Datenhaltung}{10}{section*.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Dienst}{8}{section*.3}
+\contentsline {paragraph}{Message-Oriented-Middleware}{10}{section*.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Dienst}{10}{section*.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Dienstnehmer}{10}{section*.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6}Datenmodell}{10}{section.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Proof-of-Concepts}{10}{section.7}
+\contentsline {subsection}{\numberline {6.1}Datenrepr\IeC {\"a}sentation}{11}{subsection.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Marktrecherche}{10}{section.8}
+\contentsline {section}{\numberline {7}Proof-of-Concepts}{11}{section.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.1}kollaborative Kompositionsplattformen}{10}{subsection.8.1}
+\contentsline {section}{\numberline {8}Marktrecherche}{11}{section.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2}Notationseditoren}{11}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.1}kollaborative Kompositionsplattformen}{11}{subsection.8.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Gesch\IeC {\"a}ftsmodell}{11}{section.9}
+\contentsline {subsection}{\numberline {8.2}Notationseditoren}{12}{subsection.8.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1}m\IeC {\"o}gliche Gesch\IeC {\"a}ftsmodelle}{11}{subsection.9.1}
+\contentsline {section}{\numberline {9}Gesch\IeC {\"a}ftsmodell}{12}{section.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Lizenzen}{11}{section*.4}
+\contentsline {subsection}{\numberline {9.1}m\IeC {\"o}gliche Gesch\IeC {\"a}ftsmodelle}{12}{subsection.9.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Werbung}{12}{section*.5}
+\contentsline {paragraph}{Lizenzen}{13}{section*.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{monatliche Geb\IeC {\"u}hren}{12}{section*.6}
+\contentsline {paragraph}{Werbung}{13}{section*.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2}Gesch\IeC {\"a}ftsmodell f\IeC {\"u}r CoMusic}{12}{subsection.9.2}
+\contentsline {paragraph}{monatliche Geb\IeC {\"u}hren}{13}{section*.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Alleinstellungsmerkmal}{12}{section.10}
+\contentsline {subsection}{\numberline {9.2}Gesch\IeC {\"a}ftsmodell f\IeC {\"u}r CoMusic}{13}{subsection.9.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11}Risiken}{12}{section.11}
+\contentsline {section}{\numberline {10}Alleinstellungsmerkmal}{13}{section.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Projektspezifisch}{13}{section*.7}
+\contentsline {section}{\numberline {11}Risiken}{14}{section.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Projektintern}{13}{section*.8}
+\contentsline {paragraph}{Projektspezifisch}{14}{section*.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12}Projektplan}{13}{section.12}
+\contentsline {paragraph}{Projektintern}{14}{section*.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12}Projektplan}{14}{section.12}

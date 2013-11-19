@@ -50,30 +50,30 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7}Proof-of-Concepts}{11}{section.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Marktrecherche}{11}{section.8}
+\contentsline {section}{\numberline {8}Marktrecherche und Alleinstellungsmerkmal}{11}{section.8}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.1}kollaborative Kompositionsplattformen}{11}{subsection.8.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.2}Notationseditoren}{12}{subsection.8.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Gesch\IeC {\"a}ftsmodell}{12}{section.9}
+\contentsline {section}{\numberline {9}Alleinstellungsmerkmal}{13}{section.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1}m\IeC {\"o}gliche Gesch\IeC {\"a}ftsmodelle}{12}{subsection.9.1}
+\contentsline {section}{\numberline {10}Gesch\IeC {\"a}ftsmodell}{14}{section.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Lizenzen}{13}{section*.6}
+\contentsline {subsection}{\numberline {10.1}m\IeC {\"o}gliche Gesch\IeC {\"a}ftsmodelle}{14}{subsection.10.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Werbung}{13}{section*.7}
+\contentsline {paragraph}{Lizenzen}{14}{section*.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{monatliche Geb\IeC {\"u}hren}{13}{section*.8}
+\contentsline {paragraph}{Werbung}{14}{section*.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2}Gesch\IeC {\"a}ftsmodell f\IeC {\"u}r CoMusic}{13}{subsection.9.2}
+\contentsline {paragraph}{monatliche Geb\IeC {\"u}hren}{14}{section*.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Alleinstellungsmerkmal}{13}{section.10}
+\contentsline {subsection}{\numberline {10.2}Gesch\IeC {\"a}ftsmodell f\IeC {\"u}r CoMusic}{15}{subsection.10.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11}Risiken}{14}{section.11}
+\contentsline {section}{\numberline {11}Risiken}{15}{section.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Projektspezifisch}{14}{section*.9}
+\contentsline {paragraph}{Projektspezifisch}{15}{section*.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Projektintern}{14}{section*.10}
+\contentsline {paragraph}{Projektintern}{16}{section*.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12}Projektplan}{14}{section.12}
+\contentsline {section}{\numberline {12}Projektplan}{16}{section.12}

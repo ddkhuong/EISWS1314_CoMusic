@@ -1,0 +1,62 @@
+
+kommunikationsmodell:
+- fast zu sehr richtung architektur
+- abstrakter: musiker 
+
+systemarchitektur:
+- technischer, kommunikation datenformate
+legenden
+
+softwarekomponenten: weiter aufteilen
+
+marktrecherche:
+- 
+
+poc:
+abstrakteres level
+
+
+stakeholder:
+admins
+-> breit
+im detail auf die relevanten konzentrieren 
+- beziehung zum system (wo liegt der anspurch)
+- erfordernisse & erwartungen an das system
+- anforderungen: ufnktionalitäten für das system
+- stakeholder: sponsoren
+
+
+risiken:
+- umgang
+
+
+projektplan:
+- zu grob
+- planung in zukunft
+- jeder einzelne schritt
+
+
+-  warum machen wir was
+- zusammenhänge herrausstreichen
+- stakeholder/interessenten ergeben kommunikationspartner
+- überleitungstexte
+- keine überschrift ohne unterschrift
+
+
+
+ziele:
+strategische zu taktisch
+operative zu wenig (weiter ins detail gehen)
+- projektspezifisch
+- taktische: was müssen wir für umsetzung tun -> operativ
+
+operativ:
+- kein prototyp entwickl.
+
+
+geplante funktionalität:
+- ergibt sich aus anforderungen
+
+
+anforderungsanalyse
+

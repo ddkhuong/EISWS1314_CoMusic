@@ -311,6 +311,8 @@ Da die Daten in einer zentralen Datenbank gespeichert werden, übernimmt das ver
 \paragraph*{Synchronisieren von Daten in Echtzeit}
 Für den Austausch von Kompositionsänderungen und Kommentaren in Echtzeit ist die Verwendung einer Message-Oriented-Middleware geplant. Da die Projektvorgabe Java vorgibt, bietet sich die Nutzung des Java Message Services (JMS) und eines JMS-Brokers an. Aufgrund der zweiten Vorgabe, möglichst quelloffene Software von Drittanbietern zu verwenden, fällt hier die Wahl auf den Message Broker ActiveMQ von Apache\footnote{http://activemq.apache.org/}. Dieser implementiert das JMS vollständig und bietet dadurch eine passende Lösung für das Vorhaben.
 
+% http://kirkwylie.blogspot.de/2008/07/real-mom-is-hard-lets-use-xmpp.html
+
 \paragraph*{Dienstnehmer}
 Besonders hier schränkt die Projektvorgabe der Programmiersprache die Auswahl ein. Für die Benutzeroberfläche des Dienstnehmers wird daher Java Swing verwendet. Auch der geplante Notationseditor soll mit Swing realisiert werden.
 
